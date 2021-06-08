@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.naiofy.albums_shop.AlbumListRunner" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="PSOFKA0172" time="0.0">
+  <properties/>
+  <system-out><![CDATA[22:53:30.797 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - 
+
+-------------------------------------------------------------------------------------
+     _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
+    /       ||   ____||   _  \     |   ____||  \ |  | |  | |           |\   \  /   / 
+   |   (----`|  |__   |  |_)  |    |  |__   |   \|  | |  | `---|  |----` \   \/   /  
+    \   \    |   __|  |      /     |   __|  |  . `  | |  |     |  |       \_    _/   
+.----)   |   |  |____ |  |\  \----.|  |____ |  |\   | |  |     |  |         |  |     
+|_______/    |_______|| _| `._____||_______||__| \__| |__|     |__|         |__|    
+                                                                                     
+ News and tutorials at http://www.serenity-bdd.info                                  
+ Documentation at https://wakaleo.gitbooks.io/the-serenity-book/content/             
+ Join the Serenity Community on Rocket Chat at https://serenity-bdd.rocket.chat      
+ Serenity BDD Support and Training at http://serenity-bdd.info/#/trainingandsupport  
+ Learn Serenity BDD online at http://serenity-dojo.com                               
+-------------------------------------------------------------------------------------
+
+REGISTER BASE STEP LISTENER net.thucydides.core.steps.BaseStepListener@5c6c27d3
+22:53:30.936 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - Test Suite Started: Album list
+22:54:03.483 [Test worker] WARN  n.t.core.steps.BaseStepListener - testFinished: Consult a album list with regular user access token:Given I have an access Token of a regular user to search albums [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to see the album list on the platform [See the albums into the platform [GET https://nodejs-qa-training.herokuapp.com/albums]], Then the web service responses with the list of albums [Verify that API response is 200], And the schema should match with the specification defined in "album_list.json" [Verify response schema with album_list.json]
+22:54:03.483 [Test worker] WARN  n.t.core.steps.BaseStepListener - TestOutcomes: [Consult a album list with regular user access token:Given I have an access Token of a regular user to search albums [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to see the album list on the platform [See the albums into the platform [GET https://nodejs-qa-training.herokuapp.com/albums]], Then the web service responses with the list of albums [Verify that API response is 200], And the schema should match with the specification defined in "album_list.json" [Verify response schema with album_list.json]]
+22:54:03.488 [Test worker] WARN  n.t.core.steps.BaseStepListener - Final testOutcomes: [Consult a album list with regular user access token:Given I have an access Token of a regular user to search albums [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to see the album list on the platform [See the albums into the platform [GET https://nodejs-qa-training.herokuapp.com/albums]], Then the web service responses with the list of albums [Verify that API response is 200], And the schema should match with the specification defined in "album_list.json" [Verify response schema with album_list.json]]
+22:54:03.488 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: Consult a album list with regular user access token
+----------------------------------------------------------------------------
+22:54:04.278 [Test worker] WARN  n.t.core.steps.BaseStepListener - testFinished: Consult a album list without access token:When I consume the web service to see the album list on the platform without access token [See the albums into the platform [GET https://nodejs-qa-training.herokuapp.com/albums]], Then the web service will respond with a validation error of invalid token [Verify that API response not is 200], And the schema should match with the specification defined in "errors.json" [Verify response schema with errors.json]
+22:54:04.279 [Test worker] WARN  n.t.core.steps.BaseStepListener - TestOutcomes: [Consult a album list with regular user access token:Given I have an access Token of a regular user to search albums [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to see the album list on the platform [See the albums into the platform [GET https://nodejs-qa-training.herokuapp.com/albums]], Then the web service responses with the list of albums [Verify that API response is 200], And the schema should match with the specification defined in "album_list.json" [Verify response schema with album_list.json], Consult a album list without access token:When I consume the web service to see the album list on the platform without access token [See the albums into the platform [GET https://nodejs-qa-training.herokuapp.com/albums]], Then the web service will respond with a validation error of invalid token [Verify that API response not is 200], And the schema should match with the specification defined in "errors.json" [Verify response schema with errors.json]]
+22:54:04.280 [Test worker] WARN  n.t.core.steps.BaseStepListener - Final testOutcomes: [Consult a album list with regular user access token:Given I have an access Token of a regular user to search albums [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to see the album list on the platform [See the albums into the platform [GET https://nodejs-qa-training.herokuapp.com/albums]], Then the web service responses with the list of albums [Verify that API response is 200], And the schema should match with the specification defined in "album_list.json" [Verify response schema with album_list.json], Consult a album list without access token:When I consume the web service to see the album list on the platform without access token [See the albums into the platform [GET https://nodejs-qa-training.herokuapp.com/albums]], Then the web service will respond with a validation error of invalid token [Verify that API response not is 200], And the schema should match with the specification defined in "errors.json" [Verify response schema with errors.json]]
+22:54:04.281 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: Consult a album list without access token
+----------------------------------------------------------------------------
+22:54:05.167 [Test worker] WARN  n.t.core.steps.BaseStepListener - testFinished: Consult a album list with invalid access token:When I consume the web service to see the album list on the platform with an invalid access Token [See the albums into the platform [GET https://nodejs-qa-training.herokuapp.com/albums]], Then the web service will respond with a validation error of invalid token [Verify that API response not is 200], And the schema should match with the specification defined in "errors.json" [Verify response schema with errors.json]
+22:54:05.167 [Test worker] WARN  n.t.core.steps.BaseStepListener - TestOutcomes: [Consult a album list with regular user access token:Given I have an access Token of a regular user to search albums [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to see the album list on the platform [See the albums into the platform [GET https://nodejs-qa-training.herokuapp.com/albums]], Then the web service responses with the list of albums [Verify that API response is 200], And the schema should match with the specification defined in "album_list.json" [Verify response schema with album_list.json], Consult a album list without access token:When I consume the web service to see the album list on the platform without access token [See the albums into the platform [GET https://nodejs-qa-training.herokuapp.com/albums]], Then the web service will respond with a validation error of invalid token [Verify that API response not is 200], And the schema should match with the specification defined in "errors.json" [Verify response schema with errors.json], Consult a album list with invalid access token:When I consume the web service to see the album list on the platform with an invalid access Token [See the albums into the platform [GET https://nodejs-qa-training.herokuapp.com/albums]], Then the web service will respond with a validation error of invalid token [Verify that API response not is 200], And the schema should match with the specification defined in "errors.json" [Verify response schema with errors.json]]
+22:54:05.173 [Test worker] WARN  n.t.core.steps.BaseStepListener - Final testOutcomes: [Consult a album list with regular user access token:Given I have an access Token of a regular user to search albums [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to see the album list on the platform [See the albums into the platform [GET https://nodejs-qa-training.herokuapp.com/albums]], Then the web service responses with the list of albums [Verify that API response is 200], And the schema should match with the specification defined in "album_list.json" [Verify response schema with album_list.json], Consult a album list without access token:When I consume the web service to see the album list on the platform without access token [See the albums into the platform [GET https://nodejs-qa-training.herokuapp.com/albums]], Then the web service will respond with a validation error of invalid token [Verify that API response not is 200], And the schema should match with the specification defined in "errors.json" [Verify response schema with errors.json], Consult a album list with invalid access token:When I consume the web service to see the album list on the platform with an invalid access Token [See the albums into the platform [GET https://nodejs-qa-training.herokuapp.com/albums]], Then the web service will respond with a validation error of invalid token [Verify that API response not is 200], And the schema should match with the specification defined in "errors.json" [Verify response schema with errors.json]]
+22:54:05.174 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: Consult a album list with invalid access token
+----------------------------------------------------------------------------
+Feature: Album list
+
+  Scenario: Consult a album list with regular user access token                     ?[90m# src/test/resources/features/album_list.feature:3?[0m
+    ?[32mGiven ?[0m?[32mI have an access Token of a regular user to search albums?[0m                 ?[90m# AlbumListStepdefs.iHaveAnAccessTokenOfARegularUserToSearchAlbums()?[0m
+    ?[32mWhen ?[0m?[32mI consume the web service to see the album list on the platform?[0m            ?[90m# AlbumListStepdefs.iConsumeTheWebServiceToSeeTheAlbumListOnThePlatform()?[0m
+    ?[32mThen ?[0m?[32mthe web service responses with the list of albums?[0m                          ?[90m# AlbumListStepdefs.theWebServiceResponsesWithTheListOfAlbums()?[0m
+    ?[32mAnd ?[0m?[32mthe schema should match with the specification defined in "?[0m?[32m?[1malbum_list.json?[0m?[32m"?[0m ?[90m# CommonSteps.the_schema_should_match_with_the_specification(String)?[0m
+
+  Scenario: Consult a album list without access token                                         ?[90m# src/test/resources/features/album_list.feature:9?[0m
+    ?[32mWhen ?[0m?[32mI consume the web service to see the album list on the platform without access token?[0m ?[90m# AlbumListStepdefs.iConsumeTheWebServiceToSeeTheAlbumListOnThePlatformWithoutAccessToken()?[0m
+    ?[32mThen ?[0m?[32mthe web service will respond with a validation error of invalid token?[0m                ?[90m# CommonSteps.theWebServiceWillRespondWithAValidationErrorOfInvalidToken()?[0m
+    ?[32mAnd ?[0m?[32mthe schema should match with the specification defined in "?[0m?[32m?[1merrors.json?[0m?[32m"?[0m               ?[90m# CommonSteps.the_schema_should_match_with_the_specification(String)?[0m
+
+  Scenario: Consult a album list with invalid access token                                            ?[90m# src/test/resources/features/album_list.feature:14?[0m
+    ?[32mWhen ?[0m?[32mI consume the web service to see the album list on the platform with an invalid access Token?[0m ?[90m# AlbumListStepdefs.iConsumeTheWebServiceToSeeTheAlbumListOnThePlatformWithAnInvalidAccessToken()?[0m
+    ?[32mThen ?[0m?[32mthe web service will respond with a validation error of invalid token?[0m                        ?[90m# CommonSteps.theWebServiceWillRespondWithAValidationErrorOfInvalidToken()?[0m
+    ?[32mAnd ?[0m?[32mthe schema should match with the specification defined in "?[0m?[32m?[1merrors.json?[0m?[32m"?[0m                       ?[90m# CommonSteps.the_schema_should_match_with_the_specification(String)?[0m
+
+3 Scenarios (?[32m3 passed?[0m)
+10 Steps (?[32m10 passed?[0m)
+0m35,688s
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

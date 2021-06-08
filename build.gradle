@@ -1,0 +1,114 @@
+buildscript {
+    repositories {
+        mavenLocal()
+        jcenter()
+    }
+    dependencies {
+        classpath("net.serenity-bdd:serenity-gradle-plugin:2.0.90")
+    }
+}
+
+plugins {
+    id 'java'
+    id 'idea'
+}
+
+apply plugin: 'net.serenity-bdd.aggregator'
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+    jcenter()
+}
+
+
+dependencies {
+    compile 'com.github.javafaker:javafaker:1.0.2'
+
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.12.3'
+    compile 'com.fasterxml.jackson.core:jackson-core:2.12.3'
+    compile 'com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.12.3'
+
+    compile 'ch.qos.logback:logback-classic:1.2.3'
+
+    compile 'io.cucumber:cucumber-java:4.2.0'
+    compile 'io.cucumber:cucumber-junit:4.2.0'
+
+    compile 'io.rest-assured:json-schema-validator:4.4.0'
+    compile 'com.github.java-json-tools:json-schema-validator:2.2.14'
+
+    compile 'net.serenity-bdd:serenity-rest-assured:2.0.90'
+    compile 'net.serenity-bdd:serenity-screenplay-rest:2.0.90'
+    testCompile 'net.serenity-bdd:serenity-core:2.0.90'
+    testCompile 'net.serenity-bdd:serenity-junit:2.0.90'
+    testCompile 'net.serenity-bdd:serenity-screenplay:2.0.90'
+
+    testCompile 'net.serenity-bdd:serenity-cucumber4:1.0.5'
+
+    testCompile 'junit:junit:4.13.2'
+
+    testCompile 'org.assertj:assertj-core:3.19.0'
+    testCompile 'org.hamcrest:hamcrest-all:1.3'
+}
+
+group = 'com.naofy.albums_shop'
+version = '1.0.0'
+description = 'My albums shop API Tests'
+sourceCompatibility = '1.8'
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+tasks.withType(Test) {
+    systemProperties = System.properties as Map<String, ?>
+    maxParallelForks = Runtime.runtime.availableProcessors()
+}
+
+gradle.startParameter.continueOnFailure = true
+
+compileJava.options.encoding = 'UTF-8'
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+test {
+    String regresion = System.properties['regresion']
+    println "Regression type received by parameter: " + regresion
+    systemProperty "regresion", regresion
+    switch (regresion) {
+        case "@LOGIN":
+            useJUnit()
+            include('**/LoginRunner*')
+            break
+        case "@REGISTRATION":
+            useJUnit()
+            include('**/RegistrationRunner*')
+            break
+        case "@USER_LIST":
+            useJUnit()
+            include('**/UserListRunner*')
+            break
+        case "@ALBUM_LIST":
+            useJUnit()
+            include('**/AlbumListRunner*')
+            break
+        case "@PHOTO_ALBUM_LIST":
+            useJUnit()
+            include('**/PhotoAlbumListRunner*')
+            break
+        case "@PURCHASED_ALBUM_LIST":
+            useJUnit()
+            include('**/PurchasedAlbumListRunner*')
+            break
+        case "@BUY_ALBUM":
+            useJUnit()
+            include('**/BuyAlbumRunner*')
+            break
+        case "@INVALIDATE_SESSIONS":
+            useJUnit()
+            include('**/InvalidateSessionsRunner*')
+            break
+    }
+}

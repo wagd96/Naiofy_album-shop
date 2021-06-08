@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "errors": {
+      "type": "array",
+      "properties": {
+        "code": {
+          "type": "string"
+        },
+        "message": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "origin": {
+    "type": "string"
+  },
+  "stack_trace": {
+    "type": "string"
+  },
+  "timestamp": {
+    "type": "string",
+    "format": "date"
+  }
+}

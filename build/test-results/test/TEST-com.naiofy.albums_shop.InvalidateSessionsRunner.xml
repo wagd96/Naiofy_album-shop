@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.naiofy.albums_shop.InvalidateSessionsRunner" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="PSOFKA0172" time="0.0">
+  <properties/>
+  <system-out><![CDATA[22:53:28.543 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - 
+
+-------------------------------------------------------------------------------------
+     _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
+    /       ||   ____||   _  \     |   ____||  \ |  | |  | |           |\   \  /   / 
+   |   (----`|  |__   |  |_)  |    |  |__   |   \|  | |  | `---|  |----` \   \/   /  
+    \   \    |   __|  |      /     |   __|  |  . `  | |  |     |  |       \_    _/   
+.----)   |   |  |____ |  |\  \----.|  |____ |  |\   | |  |     |  |         |  |     
+|_______/    |_______|| _| `._____||_______||__| \__| |__|     |__|         |__|    
+                                                                                     
+ News and tutorials at http://www.serenity-bdd.info                                  
+ Documentation at https://wakaleo.gitbooks.io/the-serenity-book/content/             
+ Join the Serenity Community on Rocket Chat at https://serenity-bdd.rocket.chat      
+ Serenity BDD Support and Training at http://serenity-bdd.info/#/trainingandsupport  
+ Learn Serenity BDD online at http://serenity-dojo.com                               
+-------------------------------------------------------------------------------------
+
+REGISTER BASE STEP LISTENER net.thucydides.core.steps.BaseStepListener@1065681c
+22:53:28.559 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - Test Suite Started: invalidate sessions
+22:54:01.462 [Test worker] WARN  n.t.core.steps.BaseStepListener - testFinished: Invalidate sessions successfully:Example: {user=admin} [Given I have the access token of an user type 'admin' [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to invalidate sessions [Invalidate sessions into the platform [GET https://nodejs-qa-training.herokuapp.com/users/sessions/invalidate_all]], Then the web service to invalidate sessions responses successfully [Verify that API response is 200]]
+22:54:01.462 [Test worker] WARN  n.t.core.steps.BaseStepListener - TestOutcomes: [Invalidate sessions successfully:Example: {user=admin} [Given I have the access token of an user type 'admin' [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to invalidate sessions [Invalidate sessions into the platform [GET https://nodejs-qa-training.herokuapp.com/users/sessions/invalidate_all]], Then the web service to invalidate sessions responses successfully [Verify that API response is 200]]]
+22:54:01.462 [Test worker] WARN  n.t.core.steps.BaseStepListener - Final testOutcomes: [Invalidate sessions successfully:Example: {user=admin} [Given I have the access token of an user type 'admin' [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to invalidate sessions [Invalidate sessions into the platform [GET https://nodejs-qa-training.herokuapp.com/users/sessions/invalidate_all]], Then the web service to invalidate sessions responses successfully [Verify that API response is 200]]]
+22:54:01.464 [Test worker] ERROR n.t.c.steps.ConsoleLoggingListener - 
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
+
+TEST FAILED: Invalidate sessions successfully
+--------------------------------------------------------------------------
+22:54:01.813 [Test worker] ERROR n.t.c.steps.ConsoleLoggingListener - TEST FAILED AT STEP Verify that API response is 200
+22:54:01.813 [Test worker] ERROR n.t.c.steps.ConsoleLoggingListener - expected:<[404]> but was:<[200]>
+Feature: invalidate sessions
+
+  Scenario Outline: Invalidate sessions successfully ?[90m# src/test/resources/features/invalidate_sessions.feature:3?[0m
+    ?[36mGiven I have the access token of an user type '<user>'?[0m
+    ?[36mWhen I consume the web service to invalidate sessions?[0m
+    ?[36mThen the web service to invalidate sessions responses successfully?[0m
+
+    Examples: 
+
+  Scenario Outline: Invalidate sessions successfully                   ?[90m# src/test/resources/features/invalidate_sessions.feature:9?[0m
+    ?[32mGiven ?[0m?[32mI have the access token of an user type ?[0m?[32m?[1m'admin'?[0m              ?[90m# InvalidateSessionsStepDef.iHaveTheAccessTokenOfAnUserTypeUser(String)?[0m
+    ?[32mWhen ?[0m?[32mI consume the web service to invalidate sessions?[0m              ?[90m# InvalidateSessionsStepDef.iConsumeTheWebServiceToInvalidateSessions()?[0m
+    ?[31mThen ?[0m?[31mthe web service to invalidate sessions responses successfully?[0m ?[90m# InvalidateSessionsStepDef.theWebServiceToInvalidateSessionsResponsesSuccessfully()?[0m
+      ?[31morg.junit.ComparisonFailure: expected:<[404]> but was:<[200]>
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at com.naiofy.albums_shop.questions.CommonQuestions.responseCodeIs(CommonQuestions.java:13)
+	at com.naiofy.albums_shop.questions.CommonQuestions$ByteBuddy$i0oAsHD9.responseCodeIs$accessor$YIkNGsKV(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:471)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:451)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
+	at com.naiofy.albums_shop.questions.CommonQuestions$ByteBuddy$i0oAsHD9.responseCodeIs(Unknown Source)
+	at com.naiofy.albums_shop.stepdefinitions.InvalidateSessionsStepDef.theWebServiceToInvalidateSessionsResponsesSuccessfully(InvalidateSessionsStepDef.java:43)
+	at ?.the web service to invalidate sessions responses successfully(src/test/resources/features/invalidate_sessions.feature:6)
+?[0m
+
+  Scenario Outline: Invalidate sessions successfully                   ?[90m# src/test/resources/features/invalidate_sessions.feature:10?[0m
+    ?[32mGiven ?[0m?[32mI have the access token of an user type ?[0m?[32m?[1m'regular'?[0m            ?[90m# InvalidateSessionsStepDef.iHaveTheAccessTokenOfAnUserTypeUser(String)?[0m
+    ?[32mWhen ?[0m?[32mI consume the web service to invalidate sessions?[0m              ?[90m# InvalidateSessionsStepDef.iConsumeTheWebServiceToInvalidateSessions()?[0m
+    ?[31mThen ?[0m?[31mthe web service to invalidate sessions responses successfully?[0m ?[90m# InvalidateSessionsStepDef.theWebServiceToInvalidateSessionsResponsesSuccessfully()?[0m
+      ?[31morg.junit.ComparisonFailure: expected:<[404]> but was:<[200]>
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at com.naiofy.albums_shop.questions.CommonQuestions.responseCodeIs(CommonQuestions.java:13)
+	at com.naiofy.albums_shop.questions.CommonQuestions$ByteBuddy$vMPpdwBi.responseCodeIs$accessor$WucZeyY3(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:471)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:451)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
+	at com.naiofy.albums_shop.questions.CommonQuestions$ByteBuddy$vMPpdwBi.responseCodeIs(Unknown Source)
+	at com.naiofy.albums_shop.stepdefinitions.InvalidateSessionsStepDef.theWebServiceToInvalidateSessionsResponsesSuccessfully(InvalidateSessionsStepDef.java:43)
+	at ?.the web service to invalidate sessions responses successfully(src/test/resources/features/invalidate_sessions.feature:6)
+?[0m
+
+?[31mFailed scenarios:?[0m
+?[31msrc/test/resources/features/invalidate_sessions.feature:9 ?[0m# Invalidate sessions successfully
+?[31msrc/test/resources/features/invalidate_sessions.feature:10 ?[0m# Invalidate sessions successfully
+
+2 Scenarios (?[31m2 failed?[0m)
+6 Steps (?[31m2 failed?[0m, ?[32m4 passed?[0m)
+0m35,896s
+
+org.junit.ComparisonFailure: expected:<[404]> but was:<[200]>
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at com.naiofy.albums_shop.questions.CommonQuestions.responseCodeIs(CommonQuestions.java:13)
+	at com.naiofy.albums_shop.questions.CommonQuestions$ByteBuddy$i0oAsHD9.responseCodeIs$accessor$YIkNGsKV(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:471)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:451)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
+	at com.naiofy.albums_shop.questions.CommonQuestions$ByteBuddy$i0oAsHD9.responseCodeIs(Unknown Source)
+	at com.naiofy.albums_shop.stepdefinitions.InvalidateSessionsStepDef.theWebServiceToInvalidateSessionsResponsesSuccessfully(InvalidateSessionsStepDef.java:43)
+	at ?.the web service to invalidate sessions responses successfully(src/test/resources/features/invalidate_sessions.feature:6)
+
+org.junit.ComparisonFailure: expected:<[404]> but was:<[200]>
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at com.naiofy.albums_shop.questions.CommonQuestions.responseCodeIs(CommonQuestions.java:13)
+	at com.naiofy.albums_shop.questions.CommonQuestions$ByteBuddy$vMPpdwBi.responseCodeIs$accessor$WucZeyY3(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:471)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:451)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
+	at com.naiofy.albums_shop.questions.CommonQuestions$ByteBuddy$vMPpdwBi.responseCodeIs(Unknown Source)
+	at com.naiofy.albums_shop.stepdefinitions.InvalidateSessionsStepDef.theWebServiceToInvalidateSessionsResponsesSuccessfully(InvalidateSessionsStepDef.java:43)
+	at ?.the web service to invalidate sessions responses successfully(src/test/resources/features/invalidate_sessions.feature:6)
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

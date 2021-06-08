@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.naiofy.albums_shop.BuyAlbumRunner</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.naiofy.albums_shop.BuyAlbumRunner</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.naiofy.albums_shop.html">com.naiofy.albums_shop</a> &gt; BuyAlbumRunner</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">0</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">-</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">-</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>22:53:28.719 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - 
+
+-------------------------------------------------------------------------------------
+     _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
+    /       ||   ____||   _  \     |   ____||  \ |  | |  | |           |\   \  /   / 
+   |   (----`|  |__   |  |_)  |    |  |__   |   \|  | |  | `---|  |----` \   \/   /  
+    \   \    |   __|  |      /     |   __|  |  . `  | |  |     |  |       \_    _/   
+.----)   |   |  |____ |  |\  \----.|  |____ |  |\   | |  |     |  |         |  |     
+|_______/    |_______|| _| `._____||_______||__| \__| |__|     |__|         |__|    
+                                                                                     
+ News and tutorials at http://www.serenity-bdd.info                                  
+ Documentation at https://wakaleo.gitbooks.io/the-serenity-book/content/             
+ Join the Serenity Community on Rocket Chat at https://serenity-bdd.rocket.chat      
+ Serenity BDD Support and Training at http://serenity-bdd.info/#/trainingandsupport  
+ Learn Serenity BDD online at http://serenity-dojo.com                               
+-------------------------------------------------------------------------------------
+
+REGISTER BASE STEP LISTENER net.thucydides.core.steps.BaseStepListener@35a42d2e
+22:53:28.806 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - Test Suite Started: Buy an album
+22:54:07.880 [Test worker] WARN  n.t.core.steps.BaseStepListener - testFinished: Buy an album with new regular user access token:Given I have an access Token of a new regular user to buy an album [Generate data for new user, Register a regular user into the platform [POST https://nodejs-qa-training.herokuapp.com/users], Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to buy an album on the platform [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1]], Then the web service responses with the info of the album [Verify that API response is 200], And the schema should match with the specification defined in &quot;buy_album.json&quot; [Verify response schema with buy_album.json], And the user will be see the album in their purchases [See purchased albums into the platform [GET https://nodejs-qa-training.herokuapp.com/users/1211/albums], Verify purchase: {user_id=1211, token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjEyMTEsInJvbGUiOiJyZWd1bGFyIiwiaWF0IjoxNjIzMTI0NDQyLjg5MywiZXhwIjoxNjIzMTI2MjQyLjg5M30.DgQ4H0kMP7QiOJy7Qhk5ukUjLJWzuJ1zjCUqxoiK-Iw}, 1, 1]
+22:54:07.882 [Test worker] WARN  n.t.core.steps.BaseStepListener - TestOutcomes: [Buy an album with new regular user access token:Given I have an access Token of a new regular user to buy an album [Generate data for new user, Register a regular user into the platform [POST https://nodejs-qa-training.herokuapp.com/users], Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to buy an album on the platform [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1]], Then the web service responses with the info of the album [Verify that API response is 200], And the schema should match with the specification defined in &quot;buy_album.json&quot; [Verify response schema with buy_album.json], And the user will be see the album in their purchases [See purchased albums into the platform [GET https://nodejs-qa-training.herokuapp.com/users/1211/albums], Verify purchase: {user_id=1211, token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjEyMTEsInJvbGUiOiJyZWd1bGFyIiwiaWF0IjoxNjIzMTI0NDQyLjg5MywiZXhwIjoxNjIzMTI2MjQyLjg5M30.DgQ4H0kMP7QiOJy7Qhk5ukUjLJWzuJ1zjCUqxoiK-Iw}, 1, 1]]
+22:54:07.886 [Test worker] WARN  n.t.core.steps.BaseStepListener - Final testOutcomes: [Buy an album with new regular user access token:Given I have an access Token of a new regular user to buy an album [Generate data for new user, Register a regular user into the platform [POST https://nodejs-qa-training.herokuapp.com/users], Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to buy an album on the platform [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1]], Then the web service responses with the info of the album [Verify that API response is 200], And the schema should match with the specification defined in &quot;buy_album.json&quot; [Verify response schema with buy_album.json], And the user will be see the album in their purchases [See purchased albums into the platform [GET https://nodejs-qa-training.herokuapp.com/users/1211/albums], Verify purchase: {user_id=1211, token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjEyMTEsInJvbGUiOiJyZWd1bGFyIiwiaWF0IjoxNjIzMTI0NDQyLjg5MywiZXhwIjoxNjIzMTI2MjQyLjg5M30.DgQ4H0kMP7QiOJy7Qhk5ukUjLJWzuJ1zjCUqxoiK-Iw}, 1, 1]]
+22:54:07.887 [Test worker] ERROR n.t.c.steps.ConsoleLoggingListener - 
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
+
+TEST FAILED: Buy an album with new regular user access token
+--------------------------------------------------------------------------
+22:54:08.203 [Test worker] ERROR n.t.c.steps.ConsoleLoggingListener - TEST FAILED AT STEP Verify purchase: {user_id=1211, token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjEyMTEsInJvbGUiOiJyZWd1bGFyIiwiaWF0IjoxNjIzMTI0NDQyLjg5MywiZXhwIjoxNjIzMTI2MjQyLjg5M30.DgQ4H0kMP7QiOJy7Qhk5ukUjLJWzuJ1zjCUqxoiK-Iw}, 1, 1
+22:54:08.210 [Test worker] ERROR n.t.c.steps.ConsoleLoggingListener - expected:&lt;null&gt; but was:&lt;1&gt;
+22:54:17.137 [Test worker] WARN  n.t.core.steps.BaseStepListener - testFinished: Buy a repeat album with new regular user access token:Given I have an access Token of a new regular user to buy an album [Generate data for new user, Register a regular user into the platform [POST https://nodejs-qa-training.herokuapp.com/users], Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to buy an album on the platform [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1]], And I bought the same album again [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1]], Then the web service will respond with an error of invalid album id [Verify that API response not is 200], And the schema should match with the specification defined in &quot;errors.json&quot;
+22:54:17.137 [Test worker] WARN  n.t.core.steps.BaseStepListener - TestOutcomes: [Buy an album with new regular user access token:Given I have an access Token of a new regular user to buy an album [Generate data for new user, Register a regular user into the platform [POST https://nodejs-qa-training.herokuapp.com/users], Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to buy an album on the platform [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1]], Then the web service responses with the info of the album [Verify that API response is 200], And the schema should match with the specification defined in &quot;buy_album.json&quot; [Verify response schema with buy_album.json], And the user will be see the album in their purchases [See purchased albums into the platform [GET https://nodejs-qa-training.herokuapp.com/users/1211/albums], Verify purchase: {user_id=1211, token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjEyMTEsInJvbGUiOiJyZWd1bGFyIiwiaWF0IjoxNjIzMTI0NDQyLjg5MywiZXhwIjoxNjIzMTI2MjQyLjg5M30.DgQ4H0kMP7QiOJy7Qhk5ukUjLJWzuJ1zjCUqxoiK-Iw}, 1, 1], Buy a repeat album with new regular user access token:Given I have an access Token of a new regular user to buy an album [Generate data for new user, Register a regular user into the platform [POST https://nodejs-qa-training.herokuapp.com/users], Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to buy an album on the platform [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1]], And I bought the same album again [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1]], Then the web service will respond with an error of invalid album id [Verify that API response not is 200], And the schema should match with the specification defined in &quot;errors.json&quot;]
+22:54:17.138 [Test worker] WARN  n.t.core.steps.BaseStepListener - Final testOutcomes: [Buy an album with new regular user access token:Given I have an access Token of a new regular user to buy an album [Generate data for new user, Register a regular user into the platform [POST https://nodejs-qa-training.herokuapp.com/users], Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to buy an album on the platform [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1]], Then the web service responses with the info of the album [Verify that API response is 200], And the schema should match with the specification defined in &quot;buy_album.json&quot; [Verify response schema with buy_album.json], And the user will be see the album in their purchases [See purchased albums into the platform [GET https://nodejs-qa-training.herokuapp.com/users/1211/albums], Verify purchase: {user_id=1211, token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjEyMTEsInJvbGUiOiJyZWd1bGFyIiwiaWF0IjoxNjIzMTI0NDQyLjg5MywiZXhwIjoxNjIzMTI2MjQyLjg5M30.DgQ4H0kMP7QiOJy7Qhk5ukUjLJWzuJ1zjCUqxoiK-Iw}, 1, 1], Buy a repeat album with new regular user access token:Given I have an access Token of a new regular user to buy an album [Generate data for new user, Register a regular user into the platform [POST https://nodejs-qa-training.herokuapp.com/users], Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to buy an album on the platform [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1]], And I bought the same album again [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1]], Then the web service will respond with an error of invalid album id [Verify that API response not is 200], And the schema should match with the specification defined in &quot;errors.json&quot;]
+22:54:17.139 [Test worker] ERROR n.t.c.steps.ConsoleLoggingListener - 
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
+
+TEST FAILED: Buy a repeat album with new regular user access token
+--------------------------------------------------------------------------
+22:54:17.140 [Test worker] ERROR n.t.c.steps.ConsoleLoggingListener - TEST FAILED AT STEP Verify that API response not is 200
+22:54:17.141 [Test worker] ERROR n.t.c.steps.ConsoleLoggingListener - Expecting:  200not to be equal to:  200
+22:54:18.301 [Test worker] WARN  n.t.core.steps.BaseStepListener - testFinished: Buy an album without access token:When I consume the web service to buy an album on the platform without access token [Buy an album into the platform without token [GET https://nodejs-qa-training.herokuapp.com/albums/1]], Then the web service will respond with a validation error of invalid token [Verify that API response not is 200], And the schema should match with the specification defined in &quot;errors.json&quot;
+22:54:18.345 [Test worker] WARN  n.t.core.steps.BaseStepListener - TestOutcomes: [Buy an album with new regular user access token:Given I have an access Token of a new regular user to buy an album [Generate data for new user, Register a regular user into the platform [POST https://nodejs-qa-training.herokuapp.com/users], Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to buy an album on the platform [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1]], Then the web service responses with the info of the album [Verify that API response is 200], And the schema should match with the specification defined in &quot;buy_album.json&quot; [Verify response schema with buy_album.json], And the user will be see the album in their purchases [See purchased albums into the platform [GET https://nodejs-qa-training.herokuapp.com/users/1211/albums], Verify purchase: {user_id=1211, token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjEyMTEsInJvbGUiOiJyZWd1bGFyIiwiaWF0IjoxNjIzMTI0NDQyLjg5MywiZXhwIjoxNjIzMTI2MjQyLjg5M30.DgQ4H0kMP7QiOJy7Qhk5ukUjLJWzuJ1zjCUqxoiK-Iw}, 1, 1], Buy a repeat album with new regular user access token:Given I have an access Token of a new regular user to buy an album [Generate data for new user, Register a regular user into the platform [POST https://nodejs-qa-training.herokuapp.com/users], Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to buy an album on the platform [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1]], And I bought the same album again [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1]], Then the web service will respond with an error of invalid album id [Verify that API response not is 200], And the schema should match with the specification defined in &quot;errors.json&quot;, Buy an album without access token:When I consume the web service to buy an album on the platform without access token [Buy an album into the platform without token [GET https://nodejs-qa-training.herokuapp.com/albums/1]], Then the web service will respond with a validation error of invalid token [Verify that API response not is 200], And the schema should match with the specification defined in &quot;errors.json&quot;]
+22:54:18.383 [Test worker] WARN  n.t.core.steps.BaseStepListener - Final testOutcomes: [Buy an album with new regular user access token:Given I have an access Token of a new regular user to buy an album [Generate data for new user, Register a regular user into the platform [POST https://nodejs-qa-training.herokuapp.com/users], Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to buy an album on the platform [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1]], Then the web service responses with the info of the album [Verify that API response is 200], And the schema should match with the specification defined in &quot;buy_album.json&quot; [Verify response schema with buy_album.json], And the user will be see the album in their purchases [See purchased albums into the platform [GET https://nodejs-qa-training.herokuapp.com/users/1211/albums], Verify purchase: {user_id=1211, token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjEyMTEsInJvbGUiOiJyZWd1bGFyIiwiaWF0IjoxNjIzMTI0NDQyLjg5MywiZXhwIjoxNjIzMTI2MjQyLjg5M30.DgQ4H0kMP7QiOJy7Qhk5ukUjLJWzuJ1zjCUqxoiK-Iw}, 1, 1], Buy a repeat album with new regular user access token:Given I have an access Token of a new regular user to buy an album [Generate data for new user, Register a regular user into the platform [POST https://nodejs-qa-training.herokuapp.com/users], Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to buy an album on the platform [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1]], And I bought the same album again [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1]], Then the web service will respond with an error of invalid album id [Verify that API response not is 200], And the schema should match with the specification defined in &quot;errors.json&quot;, Buy an album without access token:When I consume the web service to buy an album on the platform without access token [Buy an album into the platform without token [GET https://nodejs-qa-training.herokuapp.com/albums/1]], Then the web service will respond with a validation error of invalid token [Verify that API response not is 200], And the schema should match with the specification defined in &quot;errors.json&quot;]
+22:54:18.390 [Test worker] ERROR n.t.c.steps.ConsoleLoggingListener - 
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
+
+TEST FAILED: Buy an album without access token
+--------------------------------------------------------------------------
+22:54:18.470 [Test worker] ERROR n.t.c.steps.ConsoleLoggingListener - TEST FAILED AT STEP Verify that API response not is 200
+22:54:18.472 [Test worker] ERROR n.t.c.steps.ConsoleLoggingListener - Expecting:  200not to be equal to:  200
+22:54:21.847 [Test worker] WARN  n.t.core.steps.BaseStepListener - testFinished: Buy an album with invalid access token:When I consume the web service to buy an album on the platform with an invalid access Token [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1]], Then the web service will respond with a validation error of invalid token [Verify that API response not is 200], And the schema should match with the specification defined in &quot;errors.json&quot;
+22:54:21.848 [Test worker] WARN  n.t.core.steps.BaseStepListener - TestOutcomes: [Buy an album with new regular user access token:Given I have an access Token of a new regular user to buy an album [Generate data for new user, Register a regular user into the platform [POST https://nodejs-qa-training.herokuapp.com/users], Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to buy an album on the platform [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1]], Then the web service responses with the info of the album [Verify that API response is 200], And the schema should match with the specification defined in &quot;buy_album.json&quot; [Verify response schema with buy_album.json], And the user will be see the album in their purchases [See purchased albums into the platform [GET https://nodejs-qa-training.herokuapp.com/users/1211/albums], Verify purchase: {user_id=1211, token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjEyMTEsInJvbGUiOiJyZWd1bGFyIiwiaWF0IjoxNjIzMTI0NDQyLjg5MywiZXhwIjoxNjIzMTI2MjQyLjg5M30.DgQ4H0kMP7QiOJy7Qhk5ukUjLJWzuJ1zjCUqxoiK-Iw}, 1, 1], Buy a repeat album with new regular user access token:Given I have an access Token of a new regular user to buy an album [Generate data for new user, Register a regular user into the platform [POST https://nodejs-qa-training.herokuapp.com/users], Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to buy an album on the platform [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1]], And I bought the same album again [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1]], Then the web service will respond with an error of invalid album id [Verify that API response not is 200], And the schema should match with the specification defined in &quot;errors.json&quot;, Buy an album without access token:When I consume the web service to buy an album on the platform without access token [Buy an album into the platform without token [GET https://nodejs-qa-training.herokuapp.com/albums/1]], Then the web service will respond with a validation error of invalid token [Verify that API response not is 200], And the schema should match with the specification defined in &quot;errors.json&quot;, Buy an album with invalid access token:When I consume the web service to buy an album on the platform with an invalid access Token [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1]], Then the web service will respond with a validation error of invalid token [Verify that API response not is 200], And the schema should match with the specification defined in &quot;errors.json&quot;]
+22:54:21.851 [Test worker] WARN  n.t.core.steps.BaseStepListener - Final testOutcomes: [Buy an album with new regular user access token:Given I have an access Token of a new regular user to buy an album [Generate data for new user, Register a regular user into the platform [POST https://nodejs-qa-training.herokuapp.com/users], Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to buy an album on the platform [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1]], Then the web service responses with the info of the album [Verify that API response is 200], And the schema should match with the specification defined in &quot;buy_album.json&quot; [Verify response schema with buy_album.json], And the user will be see the album in their purchases [See purchased albums into the platform [GET https://nodejs-qa-training.herokuapp.com/users/1211/albums], Verify purchase: {user_id=1211, token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjEyMTEsInJvbGUiOiJyZWd1bGFyIiwiaWF0IjoxNjIzMTI0NDQyLjg5MywiZXhwIjoxNjIzMTI2MjQyLjg5M30.DgQ4H0kMP7QiOJy7Qhk5ukUjLJWzuJ1zjCUqxoiK-Iw}, 1, 1], Buy a repeat album with new regular user access token:Given I have an access Token of a new regular user to buy an album [Generate data for new user, Register a regular user into the platform [POST https://nodejs-qa-training.herokuapp.com/users], Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to buy an album on the platform [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1]], And I bought the same album again [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1]], Then the web service will respond with an error of invalid album id [Verify that API response not is 200], And the schema should match with the specification defined in &quot;errors.json&quot;, Buy an album without access token:When I consume the web service to buy an album on the platform without access token [Buy an album into the platform without token [GET https://nodejs-qa-training.herokuapp.com/albums/1]], Then the web service will respond with a validation error of invalid token [Verify that API response not is 200], And the schema should match with the specification defined in &quot;errors.json&quot;, Buy an album with invalid access token:When I consume the web service to buy an album on the platform with an invalid access Token [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1]], Then the web service will respond with a validation error of invalid token [Verify that API response not is 200], And the schema should match with the specification defined in &quot;errors.json&quot;]
+22:54:21.857 [Test worker] ERROR n.t.c.steps.ConsoleLoggingListener - 
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
+
+TEST FAILED: Buy an album with invalid access token
+--------------------------------------------------------------------------
+22:54:21.862 [Test worker] ERROR n.t.c.steps.ConsoleLoggingListener - TEST FAILED AT STEP Verify that API response not is 200
+22:54:21.862 [Test worker] ERROR n.t.c.steps.ConsoleLoggingListener - Expecting:  200not to be equal to:  200
+22:54:23.807 [Test worker] WARN  n.t.core.steps.BaseStepListener - testFinished: Buy an album list with invalid album id:Given I have an access Token of a regular user to buy an album [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to buy an album on the platform with an invalid album id [Buy an album for invalid albumId into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/a]], Then the web service will respond with a not found error [Verify that API response not is 200], And the schema should match with the specification defined in &quot;errors.json&quot; [Verify response schema with errors.json]
+22:54:23.808 [Test worker] WARN  n.t.core.steps.BaseStepListener - TestOutcomes: [Buy an album with new regular user access token:Given I have an access Token of a new regular user to buy an album [Generate data for new user, Register a regular user into the platform [POST https://nodejs-qa-training.herokuapp.com/users], Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to buy an album on the platform [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1]], Then the web service responses with the info of the album [Verify that API response is 200], And the schema should match with the specification defined in &quot;buy_album.json&quot; [Verify response schema with buy_album.json], And the user will be see the album in their purchases [See purchased albums into the platform [GET https://nodejs-qa-training.herokuapp.com/users/1211/albums], Verify purchase: {user_id=1211, token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjEyMTEsInJvbGUiOiJyZWd1bGFyIiwiaWF0IjoxNjIzMTI0NDQyLjg5MywiZXhwIjoxNjIzMTI2MjQyLjg5M30.DgQ4H0kMP7QiOJy7Qhk5ukUjLJWzuJ1zjCUqxoiK-Iw}, 1, 1], Buy a repeat album with new regular user access token:Given I have an access Token of a new regular user to buy an album [Generate data for new user, Register a regular user into the platform [POST https://nodejs-qa-training.herokuapp.com/users], Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to buy an album on the platform [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1]], And I bought the same album again [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1]], Then the web service will respond with an error of invalid album id [Verify that API response not is 200], And the schema should match with the specification defined in &quot;errors.json&quot;, Buy an album without access token:When I consume the web service to buy an album on the platform without access token [Buy an album into the platform without token [GET https://nodejs-qa-training.herokuapp.com/albums/1]], Then the web service will respond with a validation error of invalid token [Verify that API response not is 200], And the schema should match with the specification defined in &quot;errors.json&quot;, Buy an album with invalid access token:When I consume the web service to buy an album on the platform with an invalid access Token [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1]], Then the web service will respond with a validation error of invalid token [Verify that API response not is 200], And the schema should match with the specification defined in &quot;errors.json&quot;, Buy an album list with invalid album id:Given I have an access Token of a regular user to buy an album [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to buy an album on the platform with an invalid album id [Buy an album for invalid albumId into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/a]], Then the web service will respond with a not found error [Verify that API response not is 200], And the schema should match with the specification defined in &quot;errors.json&quot; [Verify response schema with errors.json]]
+22:54:23.808 [Test worker] WARN  n.t.core.steps.BaseStepListener - Final testOutcomes: [Buy an album with new regular user access token:Given I have an access Token of a new regular user to buy an album [Generate data for new user, Register a regular user into the platform [POST https://nodejs-qa-training.herokuapp.com/users], Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to buy an album on the platform [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1]], Then the web service responses with the info of the album [Verify that API response is 200], And the schema should match with the specification defined in &quot;buy_album.json&quot; [Verify response schema with buy_album.json], And the user will be see the album in their purchases [See purchased albums into the platform [GET https://nodejs-qa-training.herokuapp.com/users/1211/albums], Verify purchase: {user_id=1211, token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjEyMTEsInJvbGUiOiJyZWd1bGFyIiwiaWF0IjoxNjIzMTI0NDQyLjg5MywiZXhwIjoxNjIzMTI2MjQyLjg5M30.DgQ4H0kMP7QiOJy7Qhk5ukUjLJWzuJ1zjCUqxoiK-Iw}, 1, 1], Buy a repeat album with new regular user access token:Given I have an access Token of a new regular user to buy an album [Generate data for new user, Register a regular user into the platform [POST https://nodejs-qa-training.herokuapp.com/users], Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to buy an album on the platform [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1]], And I bought the same album again [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1]], Then the web service will respond with an error of invalid album id [Verify that API response not is 200], And the schema should match with the specification defined in &quot;errors.json&quot;, Buy an album without access token:When I consume the web service to buy an album on the platform without access token [Buy an album into the platform without token [GET https://nodejs-qa-training.herokuapp.com/albums/1]], Then the web service will respond with a validation error of invalid token [Verify that API response not is 200], And the schema should match with the specification defined in &quot;errors.json&quot;, Buy an album with invalid access token:When I consume the web service to buy an album on the platform with an invalid access Token [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1]], Then the web service will respond with a validation error of invalid token [Verify that API response not is 200], And the schema should match with the specification defined in &quot;errors.json&quot;, Buy an album list with invalid album id:Given I have an access Token of a regular user to buy an album [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to buy an album on the platform with an invalid album id [Buy an album for invalid albumId into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/a]], Then the web service will respond with a not found error [Verify that API response not is 200], And the schema should match with the specification defined in &quot;errors.json&quot; [Verify response schema with errors.json]]
+22:54:23.808 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: Buy an album list with invalid album id
+----------------------------------------------------------------------------
+22:54:25.270 [Test worker] WARN  n.t.core.steps.BaseStepListener - testFinished: Buy an non existent album:Given I have an access Token of a regular user to buy an album [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to buy a non existent album on the platform [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/123456789]], Then the web service will respond with a not found error [Verify that API response not is 200], And the schema should match with the specification defined in &quot;errors.json&quot; [Verify response schema with errors.json]
+22:54:25.271 [Test worker] WARN  n.t.core.steps.BaseStepListener - TestOutcomes: [Buy an album with new regular user access token:Given I have an access Token of a new regular user to buy an album [Generate data for new user, Register a regular user into the platform [POST https://nodejs-qa-training.herokuapp.com/users], Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to buy an album on the platform [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1]], Then the web service responses with the info of the album [Verify that API response is 200], And the schema should match with the specification defined in &quot;buy_album.json&quot; [Verify response schema with buy_album.json], And the user will be see the album in their purchases [See purchased albums into the platform [GET https://nodejs-qa-training.herokuapp.com/users/1211/albums], Verify purchase: {user_id=1211, token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjEyMTEsInJvbGUiOiJyZWd1bGFyIiwiaWF0IjoxNjIzMTI0NDQyLjg5MywiZXhwIjoxNjIzMTI2MjQyLjg5M30.DgQ4H0kMP7QiOJy7Qhk5ukUjLJWzuJ1zjCUqxoiK-Iw}, 1, 1], Buy a repeat album with new regular user access token:Given I have an access Token of a new regular user to buy an album [Generate data for new user, Register a regular user into the platform [POST https://nodejs-qa-training.herokuapp.com/users], Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to buy an album on the platform [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1]], And I bought the same album again [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1]], Then the web service will respond with an error of invalid album id [Verify that API response not is 200], And the schema should match with the specification defined in &quot;errors.json&quot;, Buy an album without access token:When I consume the web service to buy an album on the platform without access token [Buy an album into the platform without token [GET https://nodejs-qa-training.herokuapp.com/albums/1]], Then the web service will respond with a validation error of invalid token [Verify that API response not is 200], And the schema should match with the specification defined in &quot;errors.json&quot;, Buy an album with invalid access token:When I consume the web service to buy an album on the platform with an invalid access Token [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1]], Then the web service will respond with a validation error of invalid token [Verify that API response not is 200], And the schema should match with the specification defined in &quot;errors.json&quot;, Buy an album list with invalid album id:Given I have an access Token of a regular user to buy an album [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to buy an album on the platform with an invalid album id [Buy an album for invalid albumId into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/a]], Then the web service will respond with a not found error [Verify that API response not is 200], And the schema should match with the specification defined in &quot;errors.json&quot; [Verify response schema with errors.json], Buy an non existent album:Given I have an access Token of a regular user to buy an album [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to buy a non existent album on the platform [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/123456789]], Then the web service will respond with a not found error [Verify that API response not is 200], And the schema should match with the specification defined in &quot;errors.json&quot; [Verify response schema with errors.json]]
+22:54:25.271 [Test worker] WARN  n.t.core.steps.BaseStepListener - Final testOutcomes: [Buy an album with new regular user access token:Given I have an access Token of a new regular user to buy an album [Generate data for new user, Register a regular user into the platform [POST https://nodejs-qa-training.herokuapp.com/users], Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to buy an album on the platform [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1]], Then the web service responses with the info of the album [Verify that API response is 200], And the schema should match with the specification defined in &quot;buy_album.json&quot; [Verify response schema with buy_album.json], And the user will be see the album in their purchases [See purchased albums into the platform [GET https://nodejs-qa-training.herokuapp.com/users/1211/albums], Verify purchase: {user_id=1211, token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjEyMTEsInJvbGUiOiJyZWd1bGFyIiwiaWF0IjoxNjIzMTI0NDQyLjg5MywiZXhwIjoxNjIzMTI2MjQyLjg5M30.DgQ4H0kMP7QiOJy7Qhk5ukUjLJWzuJ1zjCUqxoiK-Iw}, 1, 1], Buy a repeat album with new regular user access token:Given I have an access Token of a new regular user to buy an album [Generate data for new user, Register a regular user into the platform [POST https://nodejs-qa-training.herokuapp.com/users], Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to buy an album on the platform [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1]], And I bought the same album again [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1]], Then the web service will respond with an error of invalid album id [Verify that API response not is 200], And the schema should match with the specification defined in &quot;errors.json&quot;, Buy an album without access token:When I consume the web service to buy an album on the platform without access token [Buy an album into the platform without token [GET https://nodejs-qa-training.herokuapp.com/albums/1]], Then the web service will respond with a validation error of invalid token [Verify that API response not is 200], And the schema should match with the specification defined in &quot;errors.json&quot;, Buy an album with invalid access token:When I consume the web service to buy an album on the platform with an invalid access Token [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1]], Then the web service will respond with a validation error of invalid token [Verify that API response not is 200], And the schema should match with the specification defined in &quot;errors.json&quot;, Buy an album list with invalid album id:Given I have an access Token of a regular user to buy an album [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to buy an album on the platform with an invalid album id [Buy an album for invalid albumId into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/a]], Then the web service will respond with a not found error [Verify that API response not is 200], And the schema should match with the specification defined in &quot;errors.json&quot; [Verify response schema with errors.json], Buy an non existent album:Given I have an access Token of a regular user to buy an album [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to buy a non existent album on the platform [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/123456789]], Then the web service will respond with a not found error [Verify that API response not is 200], And the schema should match with the specification defined in &quot;errors.json&quot; [Verify response schema with errors.json]]
+22:54:25.272 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: Buy an non existent album
+----------------------------------------------------------------------------
+Feature: Buy an album
+
+  Scenario: Buy an album with new regular user access token                        ?[90m# src/test/resources/features/buy_album.feature:3?[0m
+    ?[32mGiven ?[0m?[32mI have an access Token of a new regular user to buy an album?[0m             ?[90m# BuyAlbumStepDef.iHaveAnAccessTokenOfANewRegularUserToBuyAnAlbum()?[0m
+    ?[32mWhen ?[0m?[32mI consume the web service to buy an album on the platform?[0m                 ?[90m# BuyAlbumStepDef.iConsumeTheWebServiceToBuyAnAlbumOnThePlatform()?[0m
+    ?[32mThen ?[0m?[32mthe web service responses with the info of the album?[0m                      ?[90m# BuyAlbumStepDef.theWebServiceResponsesWithTheInfoOfTheAlbum()?[0m
+    ?[32mAnd ?[0m?[32mthe schema should match with the specification defined in &quot;?[0m?[32m?[1mbuy_album.json?[0m?[32m&quot;?[0m ?[90m# CommonSteps.the_schema_should_match_with_the_specification(String)?[0m
+    ?[31mAnd ?[0m?[31mthe user will be see the album in their purchases?[0m                          ?[90m# BuyAlbumStepDef.theUserWillBeSeeTheAlbumInTheirPurchases()?[0m
+      ?[31mnet.serenitybdd.core.exceptions.SerenityManagedException: expected:&lt;null&gt; but was:&lt;1&gt;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at com.naiofy.albums_shop.questions.buy_album.BuyAlbumQuestions.verifyPurchase(BuyAlbumQuestions.java:19)
+	at com.naiofy.albums_shop.questions.buy_album.BuyAlbumQuestions$ByteBuddy$auAKfcbD.verifyPurchase$accessor$lUtrdgD3(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:18)
+	at net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:18)
+	at net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:377)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:162)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
+	at com.naiofy.albums_shop.questions.buy_album.BuyAlbumQuestions$ByteBuddy$auAKfcbD.verifyPurchase(Unknown Source)
+	at com.naiofy.albums_shop.stepdefinitions.BuyAlbumStepDef.theUserWillBeSeeTheAlbumInTheirPurchases(BuyAlbumStepDef.java:60)
+	at ?.the user will be see the album in their purchases(src/test/resources/features/buy_album.feature:8)
+?[0m
+
+  Scenario: Buy a repeat album with new regular user access token               ?[90m# src/test/resources/features/buy_album.feature:10?[0m
+    ?[32mGiven ?[0m?[32mI have an access Token of a new regular user to buy an album?[0m          ?[90m# BuyAlbumStepDef.iHaveAnAccessTokenOfANewRegularUserToBuyAnAlbum()?[0m
+    ?[32mWhen ?[0m?[32mI consume the web service to buy an album on the platform?[0m              ?[90m# BuyAlbumStepDef.iConsumeTheWebServiceToBuyAnAlbumOnThePlatform()?[0m
+    ?[32mAnd ?[0m?[32mI bought the same album again?[0m                                           ?[90m# BuyAlbumStepDef.iBoughtTheSameAlbumAgain()?[0m
+    ?[31mThen ?[0m?[31mthe web service will respond with an error of invalid album id?[0m         ?[90m# BuyAlbumStepDef.theWebServiceWillRespondWithAnErrorOfInvalidAlbumId()?[0m
+      ?[31mjava.lang.AssertionError: 
+Expecting:
+  200
+not to be equal to:
+  200
+
+	at com.naiofy.albums_shop.questions.CommonQuestions.responseCodeNotIs(CommonQuestions.java:18)
+	at com.naiofy.albums_shop.questions.CommonQuestions$ByteBuddy$FtBtMUUx.responseCodeNotIs$accessor$K1fG14dW(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:471)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:451)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
+	at com.naiofy.albums_shop.questions.CommonQuestions$ByteBuddy$FtBtMUUx.responseCodeNotIs(Unknown Source)
+	at com.naiofy.albums_shop.stepdefinitions.BuyAlbumStepDef.theWebServiceWillRespondWithAnErrorOfInvalidAlbumId(BuyAlbumStepDef.java:96)
+	at ?.the web service will respond with an error of invalid album id(src/test/resources/features/buy_album.feature:14)
+?[0m
+    ?[36mAnd ?[0m?[36mthe schema should match with the specification defined in &quot;?[0m?[36m?[1merrors.json?[0m?[36m&quot;?[0m ?[90m# CommonSteps.the_schema_should_match_with_the_specification(String)?[0m
+
+  Scenario: Buy an album without access token                                           ?[90m# src/test/resources/features/buy_album.feature:17?[0m
+    ?[32mWhen ?[0m?[32mI consume the web service to buy an album on the platform without access token?[0m ?[90m# BuyAlbumStepDef.iConsumeTheWebServiceToBuyAnAlbumOnThePlatformWithoutAccessToken()?[0m
+    ?[31mThen ?[0m?[31mthe web service will respond with a validation error of invalid token?[0m          ?[90m# CommonSteps.theWebServiceWillRespondWithAValidationErrorOfInvalidToken()?[0m
+      ?[31mjava.lang.AssertionError: 
+Expecting:
+  200
+not to be equal to:
+  200
+
+	at com.naiofy.albums_shop.questions.CommonQuestions.responseCodeNotIs(CommonQuestions.java:18)
+	at com.naiofy.albums_shop.questions.CommonQuestions$ByteBuddy$3nWM84Cm.responseCodeNotIs$accessor$0XZTXDv1(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:471)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:451)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
+	at com.naiofy.albums_shop.questions.CommonQuestions$ByteBuddy$3nWM84Cm.responseCodeNotIs(Unknown Source)
+	at com.naiofy.albums_shop.stepdefinitions.CommonSteps.theWebServiceWillRespondWithAValidationErrorOfInvalidToken(CommonSteps.java:22)
+	at ?.the web service will respond with a validation error of invalid token(src/test/resources/features/buy_album.feature:19)
+?[0m
+    ?[36mAnd ?[0m?[36mthe schema should match with the specification defined in &quot;?[0m?[36m?[1merrors.json?[0m?[36m&quot;?[0m         ?[90m# CommonSteps.the_schema_should_match_with_the_specification(String)?[0m
+
+  Scenario: Buy an album with invalid access token                                              ?[90m# src/test/resources/features/buy_album.feature:22?[0m
+    ?[32mWhen ?[0m?[32mI consume the web service to buy an album on the platform with an invalid access Token?[0m ?[90m# BuyAlbumStepDef.iConsumeTheWebServiceToBuyAnAlbumOnThePlatformWithAnInvalidAccessToken()?[0m
+    ?[31mThen ?[0m?[31mthe web service will respond with a validation error of invalid token?[0m                  ?[90m# CommonSteps.theWebServiceWillRespondWithAValidationErrorOfInvalidToken()?[0m
+      ?[31mjava.lang.AssertionError: 
+Expecting:
+  200
+not to be equal to:
+  200
+
+	at com.naiofy.albums_shop.questions.CommonQuestions.responseCodeNotIs(CommonQuestions.java:18)
+	at com.naiofy.albums_shop.questions.CommonQuestions$ByteBuddy$f5S95bCH.responseCodeNotIs$accessor$yATt7EE5(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:471)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:451)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
+	at com.naiofy.albums_shop.questions.CommonQuestions$ByteBuddy$f5S95bCH.responseCodeNotIs(Unknown Source)
+	at com.naiofy.albums_shop.stepdefinitions.CommonSteps.theWebServiceWillRespondWithAValidationErrorOfInvalidToken(CommonSteps.java:22)
+	at ?.the web service will respond with a validation error of invalid token(src/test/resources/features/buy_album.feature:24)
+?[0m
+    ?[36mAnd ?[0m?[36mthe schema should match with the specification defined in &quot;?[0m?[36m?[1merrors.json?[0m?[36m&quot;?[0m                 ?[90m# CommonSteps.the_schema_should_match_with_the_specification(String)?[0m
+
+  Scenario: Buy an album list with invalid album id                                         ?[90m# src/test/resources/features/buy_album.feature:27?[0m
+    ?[32mGiven ?[0m?[32mI have an access Token of a regular user to buy an album?[0m                          ?[90m# BuyAlbumStepDef.iHaveAnAccessTokenOfARegularUserToBuyAnAlbum()?[0m
+    ?[32mWhen ?[0m?[32mI consume the web service to buy an album on the platform with an invalid album id?[0m ?[90m# BuyAlbumStepDef.iConsumeTheWebServiceToBuyAnAlbumOnThePlatformWithAnInvalidAlbumId()?[0m
+    ?[32mThen ?[0m?[32mthe web service will respond with a not found error?[0m                                ?[90m# BuyAlbumStepDef.theWebServiceWillRespondWithANotFoundError()?[0m
+    ?[32mAnd ?[0m?[32mthe schema should match with the specification defined in &quot;?[0m?[32m?[1merrors.json?[0m?[32m&quot;?[0m             ?[90m# CommonSteps.the_schema_should_match_with_the_specification(String)?[0m
+
+  Scenario: Buy an non existent album                                           ?[90m# src/test/resources/features/buy_album.feature:33?[0m
+    ?[32mGiven ?[0m?[32mI have an access Token of a regular user to buy an album?[0m              ?[90m# BuyAlbumStepDef.iHaveAnAccessTokenOfARegularUserToBuyAnAlbum()?[0m
+    ?[32mWhen ?[0m?[32mI consume the web service to buy a non existent album on the platform?[0m  ?[90m# BuyAlbumStepDef.iConsumeTheWebServiceToBuyANonExistentAlbumOnThePlatform()?[0m
+    ?[32mThen ?[0m?[32mthe web service will respond with a not found error?[0m                    ?[90m# BuyAlbumStepDef.theWebServiceWillRespondWithANotFoundError()?[0m
+    ?[32mAnd ?[0m?[32mthe schema should match with the specification defined in &quot;?[0m?[32m?[1merrors.json?[0m?[32m&quot;?[0m ?[90m# CommonSteps.the_schema_should_match_with_the_specification(String)?[0m
+
+?[31mFailed scenarios:?[0m
+?[31msrc/test/resources/features/buy_album.feature:3 ?[0m# Buy an album with new regular user access token
+?[31msrc/test/resources/features/buy_album.feature:10 ?[0m# Buy a repeat album with new regular user access token
+?[31msrc/test/resources/features/buy_album.feature:17 ?[0m# Buy an album without access token
+?[31msrc/test/resources/features/buy_album.feature:22 ?[0m# Buy an album with invalid access token
+
+6 Scenarios (?[31m4 failed?[0m, ?[32m2 passed?[0m)
+24 Steps (?[31m4 failed?[0m, ?[36m3 skipped?[0m, ?[32m17 passed?[0m)
+0m57,313s
+
+net.serenitybdd.core.exceptions.SerenityManagedException: expected:&lt;null&gt; but was:&lt;1&gt;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at com.naiofy.albums_shop.questions.buy_album.BuyAlbumQuestions.verifyPurchase(BuyAlbumQuestions.java:19)
+	at com.naiofy.albums_shop.questions.buy_album.BuyAlbumQuestions$ByteBuddy$auAKfcbD.verifyPurchase$accessor$lUtrdgD3(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:18)
+	at net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:18)
+	at net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:377)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:162)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
+	at com.naiofy.albums_shop.questions.buy_album.BuyAlbumQuestions$ByteBuddy$auAKfcbD.verifyPurchase(Unknown Source)
+	at com.naiofy.albums_shop.stepdefinitions.BuyAlbumStepDef.theUserWillBeSeeTheAlbumInTheirPurchases(BuyAlbumStepDef.java:60)
+	at ?.the user will be see the album in their purchases(src/test/resources/features/buy_album.feature:8)
+
+java.lang.AssertionError: 
+Expecting:
+  200
+not to be equal to:
+  200
+
+	at com.naiofy.albums_shop.questions.CommonQuestions.responseCodeNotIs(CommonQuestions.java:18)
+	at com.naiofy.albums_shop.questions.CommonQuestions$ByteBuddy$FtBtMUUx.responseCodeNotIs$accessor$K1fG14dW(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:471)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:451)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
+	at com.naiofy.albums_shop.questions.CommonQuestions$ByteBuddy$FtBtMUUx.responseCodeNotIs(Unknown Source)
+	at com.naiofy.albums_shop.stepdefinitions.BuyAlbumStepDef.theWebServiceWillRespondWithAnErrorOfInvalidAlbumId(BuyAlbumStepDef.java:96)
+	at ?.the web service will respond with an error of invalid album id(src/test/resources/features/buy_album.feature:14)
+
+java.lang.AssertionError: 
+Expecting:
+  200
+not to be equal to:
+  200
+
+	at com.naiofy.albums_shop.questions.CommonQuestions.responseCodeNotIs(CommonQuestions.java:18)
+	at com.naiofy.albums_shop.questions.CommonQuestions$ByteBuddy$3nWM84Cm.responseCodeNotIs$accessor$0XZTXDv1(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:471)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:451)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
+	at com.naiofy.albums_shop.questions.CommonQuestions$ByteBuddy$3nWM84Cm.responseCodeNotIs(Unknown Source)
+	at com.naiofy.albums_shop.stepdefinitions.CommonSteps.theWebServiceWillRespondWithAValidationErrorOfInvalidToken(CommonSteps.java:22)
+	at ?.the web service will respond with a validation error of invalid token(src/test/resources/features/buy_album.feature:19)
+
+java.lang.AssertionError: 
+Expecting:
+  200
+not to be equal to:
+  200
+
+	at com.naiofy.albums_shop.questions.CommonQuestions.responseCodeNotIs(CommonQuestions.java:18)
+	at com.naiofy.albums_shop.questions.CommonQuestions$ByteBuddy$f5S95bCH.responseCodeNotIs$accessor$yATt7EE5(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:471)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:451)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
+	at com.naiofy.albums_shop.questions.CommonQuestions$ByteBuddy$f5S95bCH.responseCodeNotIs(Unknown Source)
+	at com.naiofy.albums_shop.stepdefinitions.CommonSteps.theWebServiceWillRespondWithAValidationErrorOfInvalidToken(CommonSteps.java:22)
+	at ?.the web service will respond with a validation error of invalid token(src/test/resources/features/buy_album.feature:24)
+
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 5.4.1</a> at 7/06/2021 10:55:16 PM</p>
+</div>
+</div>
+</body>
+</html>

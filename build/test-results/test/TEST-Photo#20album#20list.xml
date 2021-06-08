@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Photo album list" tests="6" skipped="0" failures="4" errors="0" timestamp="2021-06-08T03:54:07" hostname="PSOFKA0172" time="9.557">
+  <properties/>
+  <testcase name="Consult a photo album list with regular user access token" classname="Photo album list" time="1.575">
+    <failure message="java.lang.IllegalArgumentException: Schema to use cannot be null" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Schema to use cannot be null
+	at io.restassured.module.jsv.JsonSchemaValidator.validateSchemaIsNotNull(JsonSchemaValidator.java:270)
+	at io.restassured.module.jsv.JsonSchemaValidator.access$300(JsonSchemaValidator.java:75)
+	at io.restassured.module.jsv.JsonSchemaValidator$JsonSchemaValidatorFactory.create(JsonSchemaValidator.java:281)
+	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema(JsonSchemaValidator.java:166)
+	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath(JsonSchemaValidator.java:117)
+	at com.naiofy.albums_shop.questions.CommonQuestions.verifyResponseSchema(CommonQuestions.java:23)
+	at com.naiofy.albums_shop.questions.CommonQuestions$ByteBuddy$93cyGqaT.verifyResponseSchema$accessor$s6Fyj8NH(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:471)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:451)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
+	at com.naiofy.albums_shop.questions.CommonQuestions$ByteBuddy$93cyGqaT.verifyResponseSchema(Unknown Source)
+	at com.naiofy.albums_shop.stepdefinitions.CommonSteps.the_schema_should_match_with_the_specification(CommonSteps.java:17)
+	at ✽.the schema should match with the specification defined in &quot;photos.json&quot;(src/test/resources/features/photo_album_list.feature:7)
+</failure>
+  </testcase>
+  <testcase name="Consult a photo album list without access token" classname="Photo album list" time="0.828"/>
+  <testcase name="Consult a photo album list with invalid access token" classname="Photo album list" time="0.949"/>
+  <testcase name="Consult a photo album list with invalid album id" classname="Photo album list" time="1.412">
+    <failure message="java.lang.AssertionError: &#13;&#10;Expecting:&#13;&#10;  200&#13;&#10;not to be equal to:&#13;&#10;  200&#13;&#10;" type="java.lang.AssertionError">java.lang.AssertionError: 
+Expecting:
+  200
+not to be equal to:
+  200
+
+	at com.naiofy.albums_shop.questions.CommonQuestions.responseCodeNotIs(CommonQuestions.java:18)
+	at com.naiofy.albums_shop.questions.CommonQuestions$ByteBuddy$HeGtV57P.responseCodeNotIs$accessor$ubbscbIF(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:471)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:451)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
+	at com.naiofy.albums_shop.questions.CommonQuestions$ByteBuddy$HeGtV57P.responseCodeNotIs(Unknown Source)
+	at com.naiofy.albums_shop.stepdefinitions.PhotosStepDef.theWebServiceWillRespondWithAValidationErrorOfInvalidAlbumId(PhotosStepDef.java:68)
+	at ✽.the web service will respond with a validation error of invalid album id(src/test/resources/features/photo_album_list.feature:22)
+</failure>
+  </testcase>
+  <testcase name="Consult a photo album list for non existent album id" classname="Photo album list" time="1.353">
+    <failure message="java.lang.AssertionError: &#13;&#10;Expecting:&#13;&#10;  200&#13;&#10;not to be equal to:&#13;&#10;  200&#13;&#10;" type="java.lang.AssertionError">java.lang.AssertionError: 
+Expecting:
+  200
+not to be equal to:
+  200
+
+	at com.naiofy.albums_shop.questions.CommonQuestions.responseCodeNotIs(CommonQuestions.java:18)
+	at com.naiofy.albums_shop.questions.CommonQuestions$ByteBuddy$Z3SDXCl1.responseCodeNotIs$accessor$B8OIaf4U(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:471)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:451)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
+	at com.naiofy.albums_shop.questions.CommonQuestions$ByteBuddy$Z3SDXCl1.responseCodeNotIs(Unknown Source)
+	at com.naiofy.albums_shop.stepdefinitions.PhotosStepDef.theWebServiceWillRespondWithAValidationErrorOfInvalidAlbumId(PhotosStepDef.java:68)
+	at ✽.the web service will respond with a validation error of invalid album id(src/test/resources/features/photo_album_list.feature:28)
+</failure>
+  </testcase>
+  <testcase name="Consult a photo album list without album id" classname="Photo album list" time="2.686">
+    <failure message="io.restassured.module.jsv.JsonSchemaValidationException: com.fasterxml.jackson.core.JsonParseException: Unexpected character ('&lt;' (code 60)): expected a valid value (JSON String, Number, Array, Object or token 'null', 'true' or 'false')&#10; at [Source: (StringReader); line: 1, column: 2]" type="io.restassured.module.jsv.JsonSchemaValidationException">io.restassured.module.jsv.JsonSchemaValidationException: com.fasterxml.jackson.core.JsonParseException: Unexpected character ('&lt;' (code 60)): expected a valid value (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (StringReader); line: 1, column: 2]
+	at io.restassured.module.jsv.JsonSchemaValidator.matchesSafely(JsonSchemaValidator.java:233)
+	at io.restassured.module.jsv.JsonSchemaValidator.matchesSafely(JsonSchemaValidator.java:75)
+	at org.hamcrest.TypeSafeMatcher.matches(TypeSafeMatcher.java:65)
+	at org.hamcrest.Matcher$matches.call(Unknown Source)
+	at io.restassured.assertion.BodyMatcher.validate(BodyMatcher.groovy:76)
+	at io.restassured.assertion.BodyMatcher$validate$0.call(Unknown Source)
+	at io.restassured.assertion.BodyMatcherGroup$_validate_closure2.doCall(BodyMatcherGroup.groovy:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:104)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:326)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:264)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1041)
+	at groovy.lang.Closure.call(Closure.java:411)
+	at groovy.lang.Closure.call(Closure.java:427)
+	at org.codehaus.groovy.runtime.DefaultGroovyMethods.collect(DefaultGroovyMethods.java:3540)
+	at org.codehaus.groovy.runtime.DefaultGroovyMethods.collect(DefaultGroovyMethods.java:3525)
+	at org.codehaus.groovy.runtime.DefaultGroovyMethods.collect(DefaultGroovyMethods.java:3625)
+	at org.codehaus.groovy.runtime.dgm$87.invoke(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoMetaMethodSiteNoUnwrapNoCoerce.invoke(PojoMetaMethodSite.java:246)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:55)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:127)
+	at io.restassured.assertion.BodyMatcherGroup.validate(BodyMatcherGroup.groovy:47)
+	at io.restassured.assertion.BodyMatcherGroup$validate$3.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:481)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:656)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:190)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:58)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:168)
+	at io.restassured.internal.ResponseSpecificationImpl.content(ResponseSpecificationImpl.groovy:97)
+	at io.restassured.specification.ResponseSpecification$content$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:256)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:268)
+	at com.naiofy.albums_shop.questions.CommonQuestions.verifyResponseSchema(CommonQuestions.java:23)
+	at com.naiofy.albums_shop.questions.CommonQuestions$ByteBuddy$RrJRhwZQ.verifyResponseSchema$accessor$8JYL03d6(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:471)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:451)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
+	at com.naiofy.albums_shop.questions.CommonQuestions$ByteBuddy$RrJRhwZQ.verifyResponseSchema(Unknown Source)
+	at com.naiofy.albums_shop.stepdefinitions.CommonSteps.the_schema_should_match_with_the_specification(CommonSteps.java:17)
+	at ✽.the schema should match with the specification defined in &quot;errors.json&quot;(src/test/resources/features/photo_album_list.feature:35)
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unexpected character ('&lt;' (code 60)): expected a valid value (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (StringReader); line: 1, column: 2]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2337)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:710)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:635)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:1952)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:781)
+	at com.fasterxml.jackson.databind.MappingIterator.hasNextValue(MappingIterator.java:243)
+	at com.github.fge.jackson.JsonNodeReader.readNode(JsonNodeReader.java:149)
+	at com.github.fge.jackson.JsonNodeReader.fromReader(JsonNodeReader.java:129)
+	at com.github.fge.jackson.JsonLoader.fromReader(JsonLoader.java:186)
+	at com.github.fge.jackson.JsonLoader.fromString(JsonLoader.java:199)
+	at io.restassured.module.jsv.JsonSchemaValidator.matchesSafely(JsonSchemaValidator.java:214)
+	at io.restassured.module.jsv.JsonSchemaValidator.matchesSafely(JsonSchemaValidator.java:75)
+	at org.hamcrest.TypeSafeMatcher.matches(TypeSafeMatcher.java:65)
+	at org.hamcrest.Matcher$matches.call(Unknown Source)
+	at io.restassured.assertion.BodyMatcher.validate(BodyMatcher.groovy:76)
+	at io.restassured.assertion.BodyMatcher$validate$0.call(Unknown Source)
+	at io.restassured.assertion.BodyMatcherGroup$_validate_closure2.doCall(BodyMatcherGroup.groovy:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:104)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:326)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:264)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1041)
+	at groovy.lang.Closure.call(Closure.java:411)
+	at groovy.lang.Closure.call(Closure.java:427)
+	at org.codehaus.groovy.runtime.DefaultGroovyMethods.collect(DefaultGroovyMethods.java:3540)
+	at org.codehaus.groovy.runtime.DefaultGroovyMethods.collect(DefaultGroovyMethods.java:3525)
+	at org.codehaus.groovy.runtime.DefaultGroovyMethods.collect(DefaultGroovyMethods.java:3625)
+	at org.codehaus.groovy.runtime.dgm$87.invoke(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoMetaMethodSiteNoUnwrapNoCoerce.invoke(PojoMetaMethodSite.java:246)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:55)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:127)
+	at io.restassured.assertion.BodyMatcherGroup.validate(BodyMatcherGroup.groovy:47)
+	at io.restassured.assertion.BodyMatcherGroup$validate$3.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:481)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:656)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:190)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:58)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:168)
+	at io.restassured.internal.ResponseSpecificationImpl.content(ResponseSpecificationImpl.groovy:97)
+	at io.restassured.specification.ResponseSpecification$content$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:256)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:268)
+	at com.naiofy.albums_shop.questions.CommonQuestions.verifyResponseSchema(CommonQuestions.java:23)
+	at com.naiofy.albums_shop.questions.CommonQuestions$ByteBuddy$RrJRhwZQ.verifyResponseSchema$accessor$8JYL03d6(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:471)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:451)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
+	at com.naiofy.albums_shop.questions.CommonQuestions$ByteBuddy$RrJRhwZQ.verifyResponseSchema(Unknown Source)
+	at com.naiofy.albums_shop.stepdefinitions.CommonSteps.the_schema_should_match_with_the_specification(CommonSteps.java:17)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:26)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:20)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:49)
+	at cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)
+	at cucumber.runner.TestStep.executeStep(TestStep.java:63)
+	at cucumber.runner.TestStep.run(TestStep.java:49)
+	at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)
+	at cucumber.runner.TestCase.run(TestCase.java:44)
+	at cucumber.runner.Runner.runPickle(Runner.java:40)
+	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
+	at net.serenitybdd.cucumber.CucumberWithSerenity.runChild(CucumberWithSerenity.java:193)
+	at net.serenitybdd.cucumber.CucumberWithSerenity.runChild(CucumberWithSerenity.java:64)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at net.serenitybdd.cucumber.CucumberWithSerenity$1.evaluate(CucumberWithSerenity.java:202)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:175)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:157)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.lang.Thread.run(Thread.java:748)
+</failure>
+  </testcase>
+  <system-out><![CDATA[22:54:07.820 [Test worker] WARN  n.t.core.steps.BaseStepListener - testStarted: Consult a photo album list with regular user access token/photo-album-list;consult-a-photo-album-list-with-regular-user-access-token
+22:54:07.822 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: Consult a photo album list with regular user access token
+-------------------------------------------------------------------(photo-album-list;consult-a-photo-album-list-with-regular-user-access-token)
+22:54:07.829 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@3f2f5a88
+22:54:08.010 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@747c453b
+22:54:08.013 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@3b685c4
+22:54:08.638 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@73d51893
+22:54:08.639 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a photo album list with regular user access token:Given I have an access Token of a regular user to see a photo album list [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]]
+22:54:08.639 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a photo album list with regular user access token:Given I have an access Token of a regular user to see a photo album list [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]]
+22:54:08.652 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a photo album list with regular user access token:Given I have an access Token of a regular user to see a photo album list [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]]
+22:54:08.653 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a photo album list with regular user access token:Given I have an access Token of a regular user to see a photo album list [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]]
+22:54:08.654 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@5601655a
+22:54:08.655 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@2afcfd6f
+22:54:09.284 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@3f9f7926
+22:54:09.285 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a photo album list with regular user access token:Given I have an access Token of a regular user to see a photo album list [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to see the photo list of an album on the platform [See the photos from an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1/photos]]
+22:54:09.292 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a photo album list with regular user access token:Given I have an access Token of a regular user to see a photo album list [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to see the photo list of an album on the platform [See the photos from an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1/photos]]
+22:54:09.295 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a photo album list with regular user access token:Given I have an access Token of a regular user to see a photo album list [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to see the photo list of an album on the platform [See the photos from an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1/photos]]
+22:54:09.296 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@2cbee3a5
+22:54:09.297 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@4310f6db
+22:54:09.298 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a photo album list with regular user access token:Given I have an access Token of a regular user to see a photo album list [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to see the photo list of an album on the platform [See the photos from an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1/photos]], Then the web service responses with the photo album list of the album [Verify that API response is 200]
+22:54:09.299 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a photo album list with regular user access token:Given I have an access Token of a regular user to see a photo album list [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to see the photo list of an album on the platform [See the photos from an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1/photos]], Then the web service responses with the photo album list of the album [Verify that API response is 200]
+22:54:09.301 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@6a617a93
+22:54:09.311 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@64ed8646
+22:54:10.224 [Test worker] WARN  n.t.core.steps.BaseStepListener - testStarted: Consult a photo album list without access token/photo-album-list;consult-a-photo-album-list-without-access-token
+22:54:10.225 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: Consult a photo album list without access token
+-------------------------------------------------------------------(photo-album-list;consult-a-photo-album-list-without-access-token)
+22:54:10.247 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@7186702f
+22:54:10.375 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@191ed421
+22:54:10.899 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@126ec777
+22:54:10.899 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a photo album list without access token:When I consume the web service to see the photo list of an album on the platform without access token [See the photos from an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1/photos]]
+22:54:10.900 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a photo album list without access token:When I consume the web service to see the photo list of an album on the platform without access token [See the photos from an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1/photos]]
+22:54:10.901 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a photo album list without access token:When I consume the web service to see the photo list of an album on the platform without access token [See the photos from an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1/photos]]
+22:54:10.902 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@ce66e52
+22:54:10.917 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@7e03936a
+22:54:10.918 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a photo album list without access token:When I consume the web service to see the photo list of an album on the platform without access token [See the photos from an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1/photos]], Then the web service will respond with a validation error of invalid token [Verify that API response not is 200]
+22:54:10.919 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a photo album list without access token:When I consume the web service to see the photo list of an album on the platform without access token [See the photos from an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1/photos]], Then the web service will respond with a validation error of invalid token [Verify that API response not is 200]
+22:54:10.921 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@3ca41ce4
+22:54:10.922 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@4498f8d3
+22:54:10.936 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a photo album list without access token:When I consume the web service to see the photo list of an album on the platform without access token [See the photos from an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1/photos]], Then the web service will respond with a validation error of invalid token [Verify that API response not is 200], And the schema should match with the specification defined in "errors.json" [Verify response schema with errors.json]
+22:54:10.938 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a photo album list without access token:When I consume the web service to see the photo list of an album on the platform without access token [See the photos from an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1/photos]], Then the web service will respond with a validation error of invalid token [Verify that API response not is 200], And the schema should match with the specification defined in "errors.json" [Verify response schema with errors.json]
+22:54:10.956 [Test worker] WARN  n.t.core.steps.BaseStepListener - testStarted: Consult a photo album list with invalid access token/photo-album-list;consult-a-photo-album-list-with-invalid-access-token
+22:54:10.957 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: Consult a photo album list with invalid access token
+-------------------------------------------------------------------(photo-album-list;consult-a-photo-album-list-with-invalid-access-token)
+22:54:10.963 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@a9aba21
+22:54:11.138 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@7d7ab6ac
+22:54:11.862 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@5e5502a8
+22:54:11.862 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a photo album list with invalid access token:When I consume the web service to see the photo list of an album on the platform with an invalid access Token [See the photos from an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1/photos]]
+22:54:11.862 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a photo album list with invalid access token:When I consume the web service to see the photo list of an album on the platform with an invalid access Token [See the photos from an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1/photos]]
+22:54:11.862 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a photo album list with invalid access token:When I consume the web service to see the photo list of an album on the platform with an invalid access Token [See the photos from an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1/photos]]
+22:54:11.870 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@5dc74fa1
+22:54:11.879 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@4a7ed00e
+22:54:11.880 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a photo album list with invalid access token:When I consume the web service to see the photo list of an album on the platform with an invalid access Token [See the photos from an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1/photos]], Then the web service will respond with a validation error of invalid token [Verify that API response not is 200]
+22:54:11.880 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a photo album list with invalid access token:When I consume the web service to see the photo list of an album on the platform with an invalid access Token [See the photos from an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1/photos]], Then the web service will respond with a validation error of invalid token [Verify that API response not is 200]
+22:54:11.882 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@7265e628
+22:54:11.882 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@313bb445
+22:54:11.890 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a photo album list with invalid access token:When I consume the web service to see the photo list of an album on the platform with an invalid access Token [See the photos from an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1/photos]], Then the web service will respond with a validation error of invalid token [Verify that API response not is 200], And the schema should match with the specification defined in "errors.json" [Verify response schema with errors.json]
+22:54:11.890 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a photo album list with invalid access token:When I consume the web service to see the photo list of an album on the platform with an invalid access Token [See the photos from an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1/photos]], Then the web service will respond with a validation error of invalid token [Verify that API response not is 200], And the schema should match with the specification defined in "errors.json" [Verify response schema with errors.json]
+22:54:11.941 [Test worker] WARN  n.t.core.steps.BaseStepListener - testStarted: Consult a photo album list with invalid album id/photo-album-list;consult-a-photo-album-list-with-invalid-album-id
+22:54:11.941 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: Consult a photo album list with invalid album id
+-------------------------------------------------------------------(photo-album-list;consult-a-photo-album-list-with-invalid-album-id)
+22:54:11.943 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@342e4a5
+22:54:12.098 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@32cfd1b4
+22:54:12.098 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@1af54af0
+22:54:12.712 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@751bd898
+22:54:12.712 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a photo album list with invalid album id:Given I have an access Token of a regular user to see a photo album list [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]]
+22:54:12.712 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a photo album list with invalid album id:Given I have an access Token of a regular user to see a photo album list [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]]
+22:54:12.722 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a photo album list with invalid album id:Given I have an access Token of a regular user to see a photo album list [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]]
+22:54:12.729 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a photo album list with invalid album id:Given I have an access Token of a regular user to see a photo album list [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]]
+22:54:12.729 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@3a55b882
+22:54:12.731 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@78b8e4ad
+22:54:13.241 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@2b4689ce
+22:54:13.242 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a photo album list with invalid album id:Given I have an access Token of a regular user to see a photo album list [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to see the photo list of an album on the platform with an invalid album list [See the photos from an album for invalid albumId into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/a/photos]]
+22:54:13.243 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a photo album list with invalid album id:Given I have an access Token of a regular user to see a photo album list [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to see the photo list of an album on the platform with an invalid album list [See the photos from an album for invalid albumId into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/a/photos]]
+22:54:13.244 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a photo album list with invalid album id:Given I have an access Token of a regular user to see a photo album list [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to see the photo list of an album on the platform with an invalid album list [See the photos from an album for invalid albumId into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/a/photos]]
+22:54:13.246 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@2401b099
+22:54:13.247 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@1317b0d5
+22:54:13.290 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@7c15199e
+22:54:13.324 [Test worker] WARN  n.t.core.steps.BaseStepListener - testStarted: Consult a photo album list for non existent album id/photo-album-list;consult-a-photo-album-list-for-non-existent-album-id
+22:54:13.325 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: Consult a photo album list for non existent album id
+-------------------------------------------------------------------(photo-album-list;consult-a-photo-album-list-for-non-existent-album-id)
+22:54:13.330 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@5c3e9fe6
+22:54:13.429 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@6cc6573f
+22:54:13.433 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@69419afc
+22:54:14.070 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@4285a311
+22:54:14.071 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a photo album list for non existent album id:Given I have an access Token of a regular user to see a photo album list [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]]
+22:54:14.073 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a photo album list for non existent album id:Given I have an access Token of a regular user to see a photo album list [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]]
+22:54:14.096 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a photo album list for non existent album id:Given I have an access Token of a regular user to see a photo album list [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]]
+22:54:14.097 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a photo album list for non existent album id:Given I have an access Token of a regular user to see a photo album list [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]]
+22:54:14.098 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@5cc3029
+22:54:14.100 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@4082c49d
+22:54:14.650 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@23ff9978
+22:54:14.650 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a photo album list for non existent album id:Given I have an access Token of a regular user to see a photo album list [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to see the photo list for an non existent album on the platform [See the photos from an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1456789123/photos]]
+22:54:14.650 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a photo album list for non existent album id:Given I have an access Token of a regular user to see a photo album list [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to see the photo list for an non existent album on the platform [See the photos from an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1456789123/photos]]
+22:54:14.651 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a photo album list for non existent album id:Given I have an access Token of a regular user to see a photo album list [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to see the photo list for an non existent album on the platform [See the photos from an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1456789123/photos]]
+22:54:14.652 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@bf4d1a9
+22:54:14.655 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@54fa8ee3
+22:54:14.671 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@ef987a5
+22:54:14.684 [Test worker] WARN  n.t.core.steps.BaseStepListener - testStarted: Consult a photo album list without album id/photo-album-list;consult-a-photo-album-list-without-album-id
+22:54:14.695 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: Consult a photo album list without album id
+-------------------------------------------------------------------(photo-album-list;consult-a-photo-album-list-without-album-id)
+22:54:14.700 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@2fec28ed
+22:54:14.757 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@7d11a1dd
+22:54:14.759 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@69df6b1b
+22:54:15.422 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@5f9bcead
+22:54:15.423 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a photo album list without album id:Given I have an access Token of a regular user to see a photo album list [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]]
+22:54:15.423 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a photo album list without album id:Given I have an access Token of a regular user to see a photo album list [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]]
+22:54:15.438 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a photo album list without album id:Given I have an access Token of a regular user to see a photo album list [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]]
+22:54:15.439 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a photo album list without album id:Given I have an access Token of a regular user to see a photo album list [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]]
+22:54:15.441 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@2f4165f1
+22:54:15.442 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@6dad4cfc
+22:54:17.063 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@19623b1
+22:54:17.064 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a photo album list without album id:Given I have an access Token of a regular user to see a photo album list [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to see the photo list of an album on the platform without album id [See the photos from an album without albumId into the platform [GET https://nodejs-qa-training.herokuapp.com/albums%2F%2Fphotos]]
+22:54:17.065 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a photo album list without album id:Given I have an access Token of a regular user to see a photo album list [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to see the photo list of an album on the platform without album id [See the photos from an album without albumId into the platform [GET https://nodejs-qa-training.herokuapp.com/albums%2F%2Fphotos]]
+22:54:17.066 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a photo album list without album id:Given I have an access Token of a regular user to see a photo album list [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to see the photo list of an album on the platform without album id [See the photos from an album without albumId into the platform [GET https://nodejs-qa-training.herokuapp.com/albums%2F%2Fphotos]]
+22:54:17.068 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@4313e6ac
+22:54:17.072 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@5c163ce8
+22:54:17.075 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a photo album list without album id:Given I have an access Token of a regular user to see a photo album list [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to see the photo list of an album on the platform without album id [See the photos from an album without albumId into the platform [GET https://nodejs-qa-training.herokuapp.com/albums%2F%2Fphotos]], Then the web service will respond with a validation error of invalid album id [Verify that API response not is 200]
+22:54:17.076 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a photo album list without album id:Given I have an access Token of a regular user to see a photo album list [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to see the photo list of an album on the platform without album id [See the photos from an album without albumId into the platform [GET https://nodejs-qa-training.herokuapp.com/albums%2F%2Fphotos]], Then the web service will respond with a validation error of invalid album id [Verify that API response not is 200]
+22:54:17.080 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@1bdbdef6
+22:54:17.095 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@39a82c88
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
