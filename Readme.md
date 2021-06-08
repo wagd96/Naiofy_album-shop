@@ -1,25 +1,25 @@
-# Prueba tÈcnica WOLOX.
+# üöÄ Prueba t√©cnica WOLOX. üöÄ
 
-Proyecto de pruebas para la tienda de ·lbumes desarrollada por Naiofy en el que se automatizan los servicios web que permiten realizar las siguientes acciones dentro de la tienda:
+Proyecto de pruebas para la tienda de √°lbumes desarrollada por Naiofy en el que se automatizan los servicios web que permiten realizar las siguientes acciones dentro de la tienda:
 * Registro.
 * Login.
 * Listado de usuarios.
-* Listado de ·lbumes.
-* Listado de fotos de un ·lbum.
-* Listado de ·lbumes comprados.
-* Comprar ·lbum.
+* Listado de √°lbumes.
+* Listado de fotos de un √°lbum.
+* Listado de √°lbumes comprados.
+* Comprar √°lbum.
 * Invalidar sesiones.   
 
 
-## Ejecutando el proyecto pruebas ??
+## Ejecutando el proyecto pruebas ‚öôÔ∏è
 
-El proyecto cuenta con un runner que permite ejecutar las pruebas especÌficas para cada una de las funcionalidades. En caso de querer ejecutar los escenarios de prueba de una ˙nica funcionalidad, se debe ejecutar alguno de los siguientes comandos:
+El proyecto cuenta con un runner que permite ejecutar las pruebas espec√≠ficas para cada una de las funcionalidades. En caso de querer ejecutar los escenarios de prueba de una √∫nica funcionalidad, se debe ejecutar alguno de los siguientes comandos:
 * **Login:** gradlew clean test -Dregresion="@LOGIN" aggregate
 * **Listado de usuarios:** gradlew clean test -Dregresion="@USER_LIST" aggregate
-* **Listado de ·lbumes:** gradlew clean test -Dregresion="@ALBUM_LIST" aggregate
-* **Listado de fotos de un ·lbum:** gradlew clean test -Dregresion="@PHOTO_ALBUM_LIST" aggregate
-* **Listado de ·lbumes comprados:** gradlew clean test -Dregresion="@PURCHASED_ALBUM_LIST" aggregate
-* **Comprar ·lbum:** gradlew clean test -Dregresion="@BUY_ALBUM" aggregate
+* **Listado de √°lbumes:** gradlew clean test -Dregresion="@ALBUM_LIST" aggregate
+* **Listado de fotos de un √°lbum:** gradlew clean test -Dregresion="@PHOTO_ALBUM_LIST" aggregate
+* **Listado de √°lbumes comprados:** gradlew clean test -Dregresion="@PURCHASED_ALBUM_LIST" aggregate
+* **Comprar √°lbum:** gradlew clean test -Dregresion="@BUY_ALBUM" aggregate
 * **Invalidar sesiones:** gradlew clean test -Dregresion="@INVALIDATE_SESSIONS" aggregate
 
 
@@ -27,7 +27,7 @@ En caso de necesitar ejecutar los escenarios de pruebas de todos las funcionalid
 
 * **Todos los test:** gradlew clean test aggregate
 
-## Construido con ??
+## Construido con üõ†Ô∏è
 
 * **Serenity BDD**
 * **Rest Assured**
@@ -40,6 +40,6 @@ En caso de necesitar ejecutar los escenarios de pruebas de todos las funcionalid
 * **Gradle 5.4.1**
 
 
-## Autores ??
+## Autores ‚úíÔ∏è
 
 * **Alejandro Gallego Durango**
