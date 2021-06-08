@@ -1,500 +1,0 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<meta http-equiv="x-ua-compatible" content="IE=edge"/>
-<title>Test results - Class Buy an album</title>
-<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
-<link href="../css/style.css" rel="stylesheet" type="text/css"/>
-<script src="../js/report.js" type="text/javascript"></script>
-</head>
-<body>
-<div id="content">
-<h1>Class Buy an album</h1>
-<div class="breadcrumbs">
-<a href="../index.html">all</a> &gt; 
-<a href="../packages/default-package.html">default-package</a> &gt; Buy an album</div>
-<div id="summary">
-<table>
-<tr>
-<td>
-<div class="summaryGroup">
-<table>
-<tr>
-<td>
-<div class="infoBox" id="tests">
-<div class="counter">6</div>
-<p>tests</p>
-</div>
-</td>
-<td>
-<div class="infoBox" id="failures">
-<div class="counter">4</div>
-<p>failures</p>
-</div>
-</td>
-<td>
-<div class="infoBox" id="ignored">
-<div class="counter">0</div>
-<p>ignored</p>
-</div>
-</td>
-<td>
-<div class="infoBox" id="duration">
-<div class="counter">54.210s</div>
-<p>duration</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-</td>
-<td>
-<div class="infoBox failures" id="successRate">
-<div class="percent">33%</div>
-<p>successful</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div id="tabs">
-<ul class="tabLinks">
-<li>
-<a href="#tab0">Failed tests</a>
-</li>
-<li>
-<a href="#tab1">Tests</a>
-</li>
-<li>
-<a href="#tab2">Standard output</a>
-</li>
-</ul>
-<div id="tab0" class="tab">
-<h2>Failed tests</h2>
-<div class="test">
-<a name="Buy a repeat album with new regular user access token"></a>
-<h3 class="failures">Buy a repeat album with new regular user access token</h3>
-<span class="code">
-<pre>java.lang.AssertionError: 
-Expecting:
-  200
-not to be equal to:
-  200
-
-	at com.naiofy.albums_shop.questions.CommonQuestions.responseCodeNotIs(CommonQuestions.java:18)
-	at com.naiofy.albums_shop.questions.CommonQuestions$ByteBuddy$FtBtMUUx.responseCodeNotIs$accessor$K1fG14dW(Unknown Source)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:471)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:451)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
-	at com.naiofy.albums_shop.questions.CommonQuestions$ByteBuddy$FtBtMUUx.responseCodeNotIs(Unknown Source)
-	at com.naiofy.albums_shop.stepdefinitions.BuyAlbumStepDef.theWebServiceWillRespondWithAnErrorOfInvalidAlbumId(BuyAlbumStepDef.java:96)
-	at ✽.the web service will respond with an error of invalid album id(src/test/resources/features/buy_album.feature:14)
-</pre>
-</span>
-</div>
-<div class="test">
-<a name="Buy an album with invalid access token"></a>
-<h3 class="failures">Buy an album with invalid access token</h3>
-<span class="code">
-<pre>java.lang.AssertionError: 
-Expecting:
-  200
-not to be equal to:
-  200
-
-	at com.naiofy.albums_shop.questions.CommonQuestions.responseCodeNotIs(CommonQuestions.java:18)
-	at com.naiofy.albums_shop.questions.CommonQuestions$ByteBuddy$f5S95bCH.responseCodeNotIs$accessor$yATt7EE5(Unknown Source)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:471)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:451)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
-	at com.naiofy.albums_shop.questions.CommonQuestions$ByteBuddy$f5S95bCH.responseCodeNotIs(Unknown Source)
-	at com.naiofy.albums_shop.stepdefinitions.CommonSteps.theWebServiceWillRespondWithAValidationErrorOfInvalidToken(CommonSteps.java:22)
-	at ✽.the web service will respond with a validation error of invalid token(src/test/resources/features/buy_album.feature:24)
-</pre>
-</span>
-</div>
-<div class="test">
-<a name="Buy an album with new regular user access token"></a>
-<h3 class="failures">Buy an album with new regular user access token</h3>
-<span class="code">
-<pre>net.serenitybdd.core.exceptions.SerenityManagedException: expected:&lt;null&gt; but was:&lt;1&gt;
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at com.naiofy.albums_shop.questions.buy_album.BuyAlbumQuestions.verifyPurchase(BuyAlbumQuestions.java:19)
-	at com.naiofy.albums_shop.questions.buy_album.BuyAlbumQuestions$ByteBuddy$auAKfcbD.verifyPurchase$accessor$lUtrdgD3(Unknown Source)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:18)
-	at net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:18)
-	at net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:377)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:162)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
-	at com.naiofy.albums_shop.questions.buy_album.BuyAlbumQuestions$ByteBuddy$auAKfcbD.verifyPurchase(Unknown Source)
-	at com.naiofy.albums_shop.stepdefinitions.BuyAlbumStepDef.theUserWillBeSeeTheAlbumInTheirPurchases(BuyAlbumStepDef.java:60)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at cucumber.runtime.Utils$1.call(Utils.java:26)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:20)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:49)
-	at cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)
-	at cucumber.runner.TestStep.executeStep(TestStep.java:63)
-	at cucumber.runner.TestStep.run(TestStep.java:49)
-	at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)
-	at cucumber.runner.TestCase.run(TestCase.java:44)
-	at cucumber.runner.Runner.runPickle(Runner.java:40)
-	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
-	at net.serenitybdd.cucumber.CucumberWithSerenity.runChild(CucumberWithSerenity.java:193)
-	at net.serenitybdd.cucumber.CucumberWithSerenity.runChild(CucumberWithSerenity.java:64)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at net.serenitybdd.cucumber.CucumberWithSerenity$1.evaluate(CucumberWithSerenity.java:202)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
-	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
-	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:175)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:157)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
-	at java.lang.Thread.run(Thread.java:748)
-</pre>
-</span>
-</div>
-<div class="test">
-<a name="Buy an album without access token"></a>
-<h3 class="failures">Buy an album without access token</h3>
-<span class="code">
-<pre>java.lang.AssertionError: 
-Expecting:
-  200
-not to be equal to:
-  200
-
-	at com.naiofy.albums_shop.questions.CommonQuestions.responseCodeNotIs(CommonQuestions.java:18)
-	at com.naiofy.albums_shop.questions.CommonQuestions$ByteBuddy$3nWM84Cm.responseCodeNotIs$accessor$0XZTXDv1(Unknown Source)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:471)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:451)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
-	at com.naiofy.albums_shop.questions.CommonQuestions$ByteBuddy$3nWM84Cm.responseCodeNotIs(Unknown Source)
-	at com.naiofy.albums_shop.stepdefinitions.CommonSteps.theWebServiceWillRespondWithAValidationErrorOfInvalidToken(CommonSteps.java:22)
-	at ✽.the web service will respond with a validation error of invalid token(src/test/resources/features/buy_album.feature:19)
-</pre>
-</span>
-</div>
-</div>
-<div id="tab1" class="tab">
-<h2>Tests</h2>
-<table>
-<thead>
-<tr>
-<th>Test</th>
-<th>Duration</th>
-<th>Result</th>
-</tr>
-</thead>
-<tr>
-<td class="failures">Buy a repeat album with new regular user access token</td>
-<td class="failures">8.860s</td>
-<td class="failures">failed</td>
-</tr>
-<tr>
-<td class="success">Buy an album list with invalid album id</td>
-<td class="success">1.935s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="failures">Buy an album with invalid access token</td>
-<td class="failures">3.268s</td>
-<td class="failures">failed</td>
-</tr>
-<tr>
-<td class="failures">Buy an album with new regular user access token</td>
-<td class="failures">37.534s</td>
-<td class="failures">failed</td>
-</tr>
-<tr>
-<td class="failures">Buy an album without access token</td>
-<td class="failures">1.154s</td>
-<td class="failures">failed</td>
-</tr>
-<tr>
-<td class="success">Buy an non existent album</td>
-<td class="success">1.459s</td>
-<td class="success">passed</td>
-</tr>
-</table>
-</div>
-<div id="tab2" class="tab">
-<h2>Standard output</h2>
-<span class="code">
-<pre>22:53:30.373 [Test worker] WARN  n.t.core.steps.BaseStepListener - testStarted: Buy an album with new regular user access token/buy-an-album;buy-an-album-with-new-regular-user-access-token
-22:53:30.418 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - 
- _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
-|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
-  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
-  | | | |___ ___) || |    ___) || |/ ___ \|  _ &lt; | | | |___| |_| |
-  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
-                                                                  
-
-TEST STARTED: Buy an album with new regular user access token
--------------------------------------------------------------------(buy-an-album;buy-an-album-with-new-regular-user-access-token)
-22:53:30.982 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@22d76b3f
-22:53:34.551 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@59b16f30
-22:53:40.781 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Buy an album with new regular user access token:Given I have an access Token of a new regular user to buy an album [Generate data for new user]
-22:53:42.329 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@279e2aa
-22:54:01.068 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@5d159209
-22:54:01.068 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Buy an album with new regular user access token:Given I have an access Token of a new regular user to buy an album [Generate data for new user, Register a regular user into the platform [POST https://nodejs-qa-training.herokuapp.com/users]]
-22:54:01.088 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Buy an album with new regular user access token:Given I have an access Token of a new regular user to buy an album [Generate data for new user, Register a regular user into the platform [POST https://nodejs-qa-training.herokuapp.com/users]]
-22:54:01.093 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@136f8deb
-22:54:01.098 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@7e9580ee
-22:54:01.768 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@122cac35
-22:54:01.768 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Buy an album with new regular user access token:Given I have an access Token of a new regular user to buy an album [Generate data for new user, Register a regular user into the platform [POST https://nodejs-qa-training.herokuapp.com/users], Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]]
-22:54:01.768 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Buy an album with new regular user access token:Given I have an access Token of a new regular user to buy an album [Generate data for new user, Register a regular user into the platform [POST https://nodejs-qa-training.herokuapp.com/users], Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]]
-22:54:03.355 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Buy an album with new regular user access token:Given I have an access Token of a new regular user to buy an album [Generate data for new user, Register a regular user into the platform [POST https://nodejs-qa-training.herokuapp.com/users], Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]]
-22:54:03.358 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Buy an album with new regular user access token:Given I have an access Token of a new regular user to buy an album [Generate data for new user, Register a regular user into the platform [POST https://nodejs-qa-training.herokuapp.com/users], Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]]
-22:54:03.363 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@757b2224
-22:54:03.365 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@2bb3e992
-22:54:04.173 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@42b06795
-22:54:04.174 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Buy an album with new regular user access token:Given I have an access Token of a new regular user to buy an album [Generate data for new user, Register a regular user into the platform [POST https://nodejs-qa-training.herokuapp.com/users], Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to buy an album on the platform [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1]]
-22:54:04.176 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Buy an album with new regular user access token:Given I have an access Token of a new regular user to buy an album [Generate data for new user, Register a regular user into the platform [POST https://nodejs-qa-training.herokuapp.com/users], Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to buy an album on the platform [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1]]
-22:54:04.177 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Buy an album with new regular user access token:Given I have an access Token of a new regular user to buy an album [Generate data for new user, Register a regular user into the platform [POST https://nodejs-qa-training.herokuapp.com/users], Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to buy an album on the platform [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1]]
-22:54:04.179 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@5039d06a
-22:54:04.181 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@449bc0c7
-22:54:04.597 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Buy an album with new regular user access token:Given I have an access Token of a new regular user to buy an album [Generate data for new user, Register a regular user into the platform [POST https://nodejs-qa-training.herokuapp.com/users], Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to buy an album on the platform [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1]], Then the web service responses with the info of the album [Verify that API response is 200]
-22:54:04.599 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Buy an album with new regular user access token:Given I have an access Token of a new regular user to buy an album [Generate data for new user, Register a regular user into the platform [POST https://nodejs-qa-training.herokuapp.com/users], Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to buy an album on the platform [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1]], Then the web service responses with the info of the album [Verify that API response is 200]
-22:54:04.601 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@1774dde6
-22:54:04.617 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@1468dbaf
-22:54:06.904 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Buy an album with new regular user access token:Given I have an access Token of a new regular user to buy an album [Generate data for new user, Register a regular user into the platform [POST https://nodejs-qa-training.herokuapp.com/users], Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to buy an album on the platform [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1]], Then the web service responses with the info of the album [Verify that API response is 200], And the schema should match with the specification defined in &quot;buy_album.json&quot; [Verify response schema with buy_album.json]
-22:54:06.906 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Buy an album with new regular user access token:Given I have an access Token of a new regular user to buy an album [Generate data for new user, Register a regular user into the platform [POST https://nodejs-qa-training.herokuapp.com/users], Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to buy an album on the platform [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1]], Then the web service responses with the info of the album [Verify that API response is 200], And the schema should match with the specification defined in &quot;buy_album.json&quot; [Verify response schema with buy_album.json]
-22:54:06.907 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@74483b23
-22:54:06.913 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@71a5cc8c
-22:54:07.492 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@5356f06b
-22:54:07.493 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Buy an album with new regular user access token:Given I have an access Token of a new regular user to buy an album [Generate data for new user, Register a regular user into the platform [POST https://nodejs-qa-training.herokuapp.com/users], Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to buy an album on the platform [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1]], Then the web service responses with the info of the album [Verify that API response is 200], And the schema should match with the specification defined in &quot;buy_album.json&quot; [Verify response schema with buy_album.json], And the user will be see the album in their purchases [See purchased albums into the platform [GET https://nodejs-qa-training.herokuapp.com/users/1211/albums]]
-22:54:07.494 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Buy an album with new regular user access token:Given I have an access Token of a new regular user to buy an album [Generate data for new user, Register a regular user into the platform [POST https://nodejs-qa-training.herokuapp.com/users], Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to buy an album on the platform [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1]], Then the web service responses with the info of the album [Verify that API response is 200], And the schema should match with the specification defined in &quot;buy_album.json&quot; [Verify response schema with buy_album.json], And the user will be see the album in their purchases [See purchased albums into the platform [GET https://nodejs-qa-training.herokuapp.com/users/1211/albums]]
-22:54:07.801 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@2da7b3d2
-22:54:08.282 [Test worker] WARN  n.t.core.steps.BaseStepListener - testStarted: Buy a repeat album with new regular user access token/buy-an-album;buy-a-repeat-album-with-new-regular-user-access-token
-22:54:08.283 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - 
- _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
-|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
-  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
-  | | | |___ ___) || |    ___) || |/ ___ \|  _ &lt; | | | |___| |_| |
-  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
-                                                                  
-
-TEST STARTED: Buy a repeat album with new regular user access token
--------------------------------------------------------------------(buy-an-album;buy-a-repeat-album-with-new-regular-user-access-token)
-22:54:08.303 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@4a8055c1
-22:54:08.566 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@197ec3bc
-22:54:14.127 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Buy a repeat album with new regular user access token:Given I have an access Token of a new regular user to buy an album [Generate data for new user]
-22:54:14.131 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@5bc79191
-22:54:14.803 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@5d05a59c
-22:54:14.803 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Buy a repeat album with new regular user access token:Given I have an access Token of a new regular user to buy an album [Generate data for new user, Register a regular user into the platform [POST https://nodejs-qa-training.herokuapp.com/users]]
-22:54:14.804 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Buy a repeat album with new regular user access token:Given I have an access Token of a new regular user to buy an album [Generate data for new user, Register a regular user into the platform [POST https://nodejs-qa-training.herokuapp.com/users]]
-22:54:14.805 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@6a217ba5
-22:54:14.809 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@550c0957
-22:54:15.647 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@6329b1f4
-22:54:15.648 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Buy a repeat album with new regular user access token:Given I have an access Token of a new regular user to buy an album [Generate data for new user, Register a regular user into the platform [POST https://nodejs-qa-training.herokuapp.com/users], Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]]
-22:54:15.648 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Buy a repeat album with new regular user access token:Given I have an access Token of a new regular user to buy an album [Generate data for new user, Register a regular user into the platform [POST https://nodejs-qa-training.herokuapp.com/users], Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]]
-22:54:15.667 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Buy a repeat album with new regular user access token:Given I have an access Token of a new regular user to buy an album [Generate data for new user, Register a regular user into the platform [POST https://nodejs-qa-training.herokuapp.com/users], Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]]
-22:54:15.669 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Buy a repeat album with new regular user access token:Given I have an access Token of a new regular user to buy an album [Generate data for new user, Register a regular user into the platform [POST https://nodejs-qa-training.herokuapp.com/users], Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]]
-22:54:15.670 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@12cb0e4c
-22:54:15.672 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@719445aa
-22:54:16.463 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@93a64aa
-22:54:16.465 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Buy a repeat album with new regular user access token:Given I have an access Token of a new regular user to buy an album [Generate data for new user, Register a regular user into the platform [POST https://nodejs-qa-training.herokuapp.com/users], Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to buy an album on the platform [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1]]
-22:54:16.465 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Buy a repeat album with new regular user access token:Given I have an access Token of a new regular user to buy an album [Generate data for new user, Register a regular user into the platform [POST https://nodejs-qa-training.herokuapp.com/users], Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to buy an album on the platform [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1]]
-22:54:16.467 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Buy a repeat album with new regular user access token:Given I have an access Token of a new regular user to buy an album [Generate data for new user, Register a regular user into the platform [POST https://nodejs-qa-training.herokuapp.com/users], Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to buy an album on the platform [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1]]
-22:54:16.469 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@85099c6
-22:54:16.475 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@227962b6
-22:54:17.109 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@4ef2f11c
-22:54:17.109 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Buy a repeat album with new regular user access token:Given I have an access Token of a new regular user to buy an album [Generate data for new user, Register a regular user into the platform [POST https://nodejs-qa-training.herokuapp.com/users], Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to buy an album on the platform [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1]], And I bought the same album again [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1]]
-22:54:17.110 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Buy a repeat album with new regular user access token:Given I have an access Token of a new regular user to buy an album [Generate data for new user, Register a regular user into the platform [POST https://nodejs-qa-training.herokuapp.com/users], Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to buy an album on the platform [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1]], And I bought the same album again [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1]]
-22:54:17.112 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Buy a repeat album with new regular user access token:Given I have an access Token of a new regular user to buy an album [Generate data for new user, Register a regular user into the platform [POST https://nodejs-qa-training.herokuapp.com/users], Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to buy an album on the platform [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1]], And I bought the same album again [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1]]
-22:54:17.113 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@774cd5c2
-22:54:17.115 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@305016e7
-22:54:17.131 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@3bea427a
-22:54:17.148 [Test worker] WARN  n.t.core.steps.BaseStepListener - testStarted: Buy an album without access token/buy-an-album;buy-an-album-without-access-token
-22:54:17.149 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - 
- _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
-|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
-  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
-  | | | |___ ___) || |    ___) || |/ ___ \|  _ &lt; | | | |___| |_| |
-  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
-                                                                  
-
-TEST STARTED: Buy an album without access token
--------------------------------------------------------------------(buy-an-album;buy-an-album-without-access-token)
-22:54:17.175 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@5340ca4
-22:54:17.626 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@5a37b4cd
-22:54:18.179 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@71209663
-22:54:18.180 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Buy an album without access token:When I consume the web service to buy an album on the platform without access token [Buy an album into the platform without token [GET https://nodejs-qa-training.herokuapp.com/albums/1]]
-22:54:18.185 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Buy an album without access token:When I consume the web service to buy an album on the platform without access token [Buy an album into the platform without token [GET https://nodejs-qa-training.herokuapp.com/albums/1]]
-22:54:18.187 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Buy an album without access token:When I consume the web service to buy an album on the platform without access token [Buy an album into the platform without token [GET https://nodejs-qa-training.herokuapp.com/albums/1]]
-22:54:18.190 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@41c664c9
-22:54:18.230 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@7805633a
-22:54:18.296 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@b3bbd3b
-22:54:18.545 [Test worker] WARN  n.t.core.steps.BaseStepListener - testStarted: Buy an album with invalid access token/buy-an-album;buy-an-album-with-invalid-access-token
-22:54:18.546 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - 
- _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
-|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
-  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
-  | | | |___ ___) || |    ___) || |/ ___ \|  _ &lt; | | | |___| |_| |
-  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
-                                                                  
-
-TEST STARTED: Buy an album with invalid access token
--------------------------------------------------------------------(buy-an-album;buy-an-album-with-invalid-access-token)
-22:54:18.551 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@5edc7705
-22:54:20.835 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@710325eb
-22:54:21.755 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@5638a84c
-22:54:21.755 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Buy an album with invalid access token:When I consume the web service to buy an album on the platform with an invalid access Token [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1]]
-22:54:21.758 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Buy an album with invalid access token:When I consume the web service to buy an album on the platform with an invalid access Token [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1]]
-22:54:21.760 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Buy an album with invalid access token:When I consume the web service to buy an album on the platform with an invalid access Token [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1]]
-22:54:21.761 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@576da284
-22:54:21.780 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@d19d242
-22:54:21.801 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@4ec70cfc
-22:54:21.892 [Test worker] WARN  n.t.core.steps.BaseStepListener - testStarted: Buy an album list with invalid album id/buy-an-album;buy-an-album-list-with-invalid-album-id
-22:54:21.893 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - 
- _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
-|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
-  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
-  | | | |___ ___) || |    ___) || |/ ___ \|  _ &lt; | | | |___| |_| |
-  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
-                                                                  
-
-TEST STARTED: Buy an album list with invalid album id
--------------------------------------------------------------------(buy-an-album;buy-an-album-list-with-invalid-album-id)
-22:54:21.897 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@7470aad7
-22:54:22.045 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@47da360a
-22:54:22.054 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@a6e1069
-22:54:23.153 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@4c15fdca
-22:54:23.153 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Buy an album list with invalid album id:Given I have an access Token of a regular user to buy an album [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]]
-22:54:23.153 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Buy an album list with invalid album id:Given I have an access Token of a regular user to buy an album [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]]
-22:54:23.169 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Buy an album list with invalid album id:Given I have an access Token of a regular user to buy an album [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]]
-22:54:23.169 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Buy an album list with invalid album id:Given I have an access Token of a regular user to buy an album [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]]
-22:54:23.169 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@621ce36e
-22:54:23.173 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@cd7432b
-22:54:23.731 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@2198e450
-22:54:23.733 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Buy an album list with invalid album id:Given I have an access Token of a regular user to buy an album [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to buy an album on the platform with an invalid album id [Buy an album for invalid albumId into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/a]]
-22:54:23.733 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Buy an album list with invalid album id:Given I have an access Token of a regular user to buy an album [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to buy an album on the platform with an invalid album id [Buy an album for invalid albumId into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/a]]
-22:54:23.734 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Buy an album list with invalid album id:Given I have an access Token of a regular user to buy an album [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to buy an album on the platform with an invalid album id [Buy an album for invalid albumId into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/a]]
-22:54:23.736 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@4095fc3d
-22:54:23.740 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@1f7d00e8
-22:54:23.743 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Buy an album list with invalid album id:Given I have an access Token of a regular user to buy an album [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to buy an album on the platform with an invalid album id [Buy an album for invalid albumId into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/a]], Then the web service will respond with a not found error [Verify that API response not is 200]
-22:54:23.745 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Buy an album list with invalid album id:Given I have an access Token of a regular user to buy an album [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to buy an album on the platform with an invalid album id [Buy an album for invalid albumId into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/a]], Then the web service will respond with a not found error [Verify that API response not is 200]
-22:54:23.746 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@6b780c81
-22:54:23.762 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@5cf01072
-22:54:23.805 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Buy an album list with invalid album id:Given I have an access Token of a regular user to buy an album [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to buy an album on the platform with an invalid album id [Buy an album for invalid albumId into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/a]], Then the web service will respond with a not found error [Verify that API response not is 200], And the schema should match with the specification defined in &quot;errors.json&quot; [Verify response schema with errors.json]
-22:54:23.805 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Buy an album list with invalid album id:Given I have an access Token of a regular user to buy an album [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to buy an album on the platform with an invalid album id [Buy an album for invalid albumId into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/a]], Then the web service will respond with a not found error [Verify that API response not is 200], And the schema should match with the specification defined in &quot;errors.json&quot; [Verify response schema with errors.json]
-22:54:23.818 [Test worker] WARN  n.t.core.steps.BaseStepListener - testStarted: Buy an non existent album/buy-an-album;buy-an-non-existent-album
-22:54:23.821 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - 
- _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
-|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
-  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
-  | | | |___ ___) || |    ___) || |/ ___ \|  _ &lt; | | | |___| |_| |
-  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
-                                                                  
-
-TEST STARTED: Buy an non existent album
--------------------------------------------------------------------(buy-an-album;buy-an-non-existent-album)
-22:54:23.827 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@26e7d3ac
-22:54:23.918 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@32f3aeca
-22:54:23.926 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@695fb7f6
-22:54:24.573 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@23b5beb6
-22:54:24.573 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Buy an non existent album:Given I have an access Token of a regular user to buy an album [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]]
-22:54:24.575 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Buy an non existent album:Given I have an access Token of a regular user to buy an album [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]]
-22:54:24.674 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Buy an non existent album:Given I have an access Token of a regular user to buy an album [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]]
-22:54:24.678 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Buy an non existent album:Given I have an access Token of a regular user to buy an album [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]]
-22:54:24.682 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@550843c
-22:54:24.684 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@e6dd005
-22:54:25.235 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@1556f3bf
-22:54:25.236 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Buy an non existent album:Given I have an access Token of a regular user to buy an album [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to buy a non existent album on the platform [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/123456789]]
-22:54:25.237 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Buy an non existent album:Given I have an access Token of a regular user to buy an album [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to buy a non existent album on the platform [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/123456789]]
-22:54:25.238 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Buy an non existent album:Given I have an access Token of a regular user to buy an album [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to buy a non existent album on the platform [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/123456789]]
-22:54:25.241 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@34a6ce57
-22:54:25.242 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@1a73de62
-22:54:25.243 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Buy an non existent album:Given I have an access Token of a regular user to buy an album [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to buy a non existent album on the platform [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/123456789]], Then the web service will respond with a not found error [Verify that API response not is 200]
-22:54:25.244 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Buy an non existent album:Given I have an access Token of a regular user to buy an album [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to buy a non existent album on the platform [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/123456789]], Then the web service will respond with a not found error [Verify that API response not is 200]
-22:54:25.246 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@5da24d25
-22:54:25.260 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@6c5d065a
-22:54:25.268 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Buy an non existent album:Given I have an access Token of a regular user to buy an album [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to buy a non existent album on the platform [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/123456789]], Then the web service will respond with a not found error [Verify that API response not is 200], And the schema should match with the specification defined in &quot;errors.json&quot; [Verify response schema with errors.json]
-22:54:25.269 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Buy an non existent album:Given I have an access Token of a regular user to buy an album [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to buy a non existent album on the platform [Buy an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/123456789]], Then the web service will respond with a not found error [Verify that API response not is 200], And the schema should match with the specification defined in &quot;errors.json&quot; [Verify response schema with errors.json]
-</pre>
-</span>
-</div>
-</div>
-<div id="footer">
-<p>
-<div>
-<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
-<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
-</label>
-</div>Generated by 
-<a href="http://www.gradle.org">Gradle 5.4.1</a> at 7/06/2021 10:55:16 PM</p>
-</div>
-</div>
-</body>
-</html>

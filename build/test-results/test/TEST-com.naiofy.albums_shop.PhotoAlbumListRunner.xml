@@ -1,654 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.naiofy.albums_shop.PhotoAlbumListRunner" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="PSOFKA0172" time="0.0">
-  <properties/>
-  <system-out><![CDATA[REGISTER BASE STEP LISTENER net.thucydides.core.steps.BaseStepListener@65313213
-22:54:07.670 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - Test Suite Started: Photo album list
-22:54:09.388 [Test worker] WARN  n.t.core.steps.BaseStepListener - testFinished: Consult a photo album list with regular user access token:Given I have an access Token of a regular user to see a photo album list [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to see the photo list of an album on the platform [See the photos from an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1/photos]], Then the web service responses with the photo album list of the album [Verify that API response is 200], And the schema should match with the specification defined in "photos.json" [Verify response schema with photos.json]
-22:54:09.388 [Test worker] WARN  n.t.core.steps.BaseStepListener - TestOutcomes: [Consult a photo album list with regular user access token:Given I have an access Token of a regular user to see a photo album list [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to see the photo list of an album on the platform [See the photos from an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1/photos]], Then the web service responses with the photo album list of the album [Verify that API response is 200], And the schema should match with the specification defined in "photos.json" [Verify response schema with photos.json]]
-22:54:09.392 [Test worker] WARN  n.t.core.steps.BaseStepListener - Final testOutcomes: [Consult a photo album list with regular user access token:Given I have an access Token of a regular user to see a photo album list [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to see the photo list of an album on the platform [See the photos from an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1/photos]], Then the web service responses with the photo album list of the album [Verify that API response is 200], And the schema should match with the specification defined in "photos.json" [Verify response schema with photos.json]]
-22:54:09.392 [Test worker] ERROR n.t.c.steps.ConsoleLoggingListener - 
-           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
-  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
- (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
-  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
- (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
-          \_\                                                            
-
-TEST FAILED WITH ERROR: Consult a photo album list with regular user access token
----------------------------------------------------------------------
-22:54:10.077 [Test worker] ERROR n.t.c.steps.ConsoleLoggingListener - TEST FAILED AT STEP Verify response schema with photos.json
-22:54:10.078 [Test worker] ERROR n.t.c.steps.ConsoleLoggingListener - Schema to use cannot be null
-22:54:10.939 [Test worker] WARN  n.t.core.steps.BaseStepListener - testFinished: Consult a photo album list without access token:When I consume the web service to see the photo list of an album on the platform without access token [See the photos from an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1/photos]], Then the web service will respond with a validation error of invalid token [Verify that API response not is 200], And the schema should match with the specification defined in "errors.json" [Verify response schema with errors.json]
-22:54:10.941 [Test worker] WARN  n.t.core.steps.BaseStepListener - TestOutcomes: [Consult a photo album list with regular user access token:Given I have an access Token of a regular user to see a photo album list [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to see the photo list of an album on the platform [See the photos from an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1/photos]], Then the web service responses with the photo album list of the album [Verify that API response is 200], And the schema should match with the specification defined in "photos.json" [Verify response schema with photos.json], Consult a photo album list without access token:When I consume the web service to see the photo list of an album on the platform without access token [See the photos from an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1/photos]], Then the web service will respond with a validation error of invalid token [Verify that API response not is 200], And the schema should match with the specification defined in "errors.json" [Verify response schema with errors.json]]
-22:54:10.941 [Test worker] WARN  n.t.core.steps.BaseStepListener - Final testOutcomes: [Consult a photo album list with regular user access token:Given I have an access Token of a regular user to see a photo album list [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to see the photo list of an album on the platform [See the photos from an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1/photos]], Then the web service responses with the photo album list of the album [Verify that API response is 200], And the schema should match with the specification defined in "photos.json" [Verify response schema with photos.json], Consult a photo album list without access token:When I consume the web service to see the photo list of an album on the platform without access token [See the photos from an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1/photos]], Then the web service will respond with a validation error of invalid token [Verify that API response not is 200], And the schema should match with the specification defined in "errors.json" [Verify response schema with errors.json]]
-22:54:10.942 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - 
-        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
-  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
- (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
-  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
- (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
-        /_/                                                                
-
-TEST PASSED: Consult a photo album list without access token
-----------------------------------------------------------------------------
-22:54:11.892 [Test worker] WARN  n.t.core.steps.BaseStepListener - testFinished: Consult a photo album list with invalid access token:When I consume the web service to see the photo list of an album on the platform with an invalid access Token [See the photos from an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1/photos]], Then the web service will respond with a validation error of invalid token [Verify that API response not is 200], And the schema should match with the specification defined in "errors.json" [Verify response schema with errors.json]
-22:54:11.892 [Test worker] WARN  n.t.core.steps.BaseStepListener - TestOutcomes: [Consult a photo album list with regular user access token:Given I have an access Token of a regular user to see a photo album list [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to see the photo list of an album on the platform [See the photos from an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1/photos]], Then the web service responses with the photo album list of the album [Verify that API response is 200], And the schema should match with the specification defined in "photos.json" [Verify response schema with photos.json], Consult a photo album list without access token:When I consume the web service to see the photo list of an album on the platform without access token [See the photos from an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1/photos]], Then the web service will respond with a validation error of invalid token [Verify that API response not is 200], And the schema should match with the specification defined in "errors.json" [Verify response schema with errors.json], Consult a photo album list with invalid access token:When I consume the web service to see the photo list of an album on the platform with an invalid access Token [See the photos from an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1/photos]], Then the web service will respond with a validation error of invalid token [Verify that API response not is 200], And the schema should match with the specification defined in "errors.json" [Verify response schema with errors.json]]
-22:54:11.892 [Test worker] WARN  n.t.core.steps.BaseStepListener - Final testOutcomes: [Consult a photo album list with regular user access token:Given I have an access Token of a regular user to see a photo album list [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to see the photo list of an album on the platform [See the photos from an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1/photos]], Then the web service responses with the photo album list of the album [Verify that API response is 200], And the schema should match with the specification defined in "photos.json" [Verify response schema with photos.json], Consult a photo album list without access token:When I consume the web service to see the photo list of an album on the platform without access token [See the photos from an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1/photos]], Then the web service will respond with a validation error of invalid token [Verify that API response not is 200], And the schema should match with the specification defined in "errors.json" [Verify response schema with errors.json], Consult a photo album list with invalid access token:When I consume the web service to see the photo list of an album on the platform with an invalid access Token [See the photos from an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1/photos]], Then the web service will respond with a validation error of invalid token [Verify that API response not is 200], And the schema should match with the specification defined in "errors.json" [Verify response schema with errors.json]]
-22:54:11.892 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - 
-        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
-  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
- (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
-  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
- (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
-        /_/                                                                
-
-TEST PASSED: Consult a photo album list with invalid access token
-----------------------------------------------------------------------------
-22:54:13.309 [Test worker] WARN  n.t.core.steps.BaseStepListener - testFinished: Consult a photo album list with invalid album id:Given I have an access Token of a regular user to see a photo album list [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to see the photo list of an album on the platform with an invalid album list [See the photos from an album for invalid albumId into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/a/photos]], Then the web service will respond with a validation error of invalid album id [Verify that API response not is 200], And the schema should match with the specification defined in "errors.json"
-22:54:13.310 [Test worker] WARN  n.t.core.steps.BaseStepListener - TestOutcomes: [Consult a photo album list with regular user access token:Given I have an access Token of a regular user to see a photo album list [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to see the photo list of an album on the platform [See the photos from an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1/photos]], Then the web service responses with the photo album list of the album [Verify that API response is 200], And the schema should match with the specification defined in "photos.json" [Verify response schema with photos.json], Consult a photo album list without access token:When I consume the web service to see the photo list of an album on the platform without access token [See the photos from an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1/photos]], Then the web service will respond with a validation error of invalid token [Verify that API response not is 200], And the schema should match with the specification defined in "errors.json" [Verify response schema with errors.json], Consult a photo album list with invalid access token:When I consume the web service to see the photo list of an album on the platform with an invalid access Token [See the photos from an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1/photos]], Then the web service will respond with a validation error of invalid token [Verify that API response not is 200], And the schema should match with the specification defined in "errors.json" [Verify response schema with errors.json], Consult a photo album list with invalid album id:Given I have an access Token of a regular user to see a photo album list [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to see the photo list of an album on the platform with an invalid album list [See the photos from an album for invalid albumId into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/a/photos]], Then the web service will respond with a validation error of invalid album id [Verify that API response not is 200], And the schema should match with the specification defined in "errors.json"]
-22:54:13.315 [Test worker] WARN  n.t.core.steps.BaseStepListener - Final testOutcomes: [Consult a photo album list with regular user access token:Given I have an access Token of a regular user to see a photo album list [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to see the photo list of an album on the platform [See the photos from an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1/photos]], Then the web service responses with the photo album list of the album [Verify that API response is 200], And the schema should match with the specification defined in "photos.json" [Verify response schema with photos.json], Consult a photo album list without access token:When I consume the web service to see the photo list of an album on the platform without access token [See the photos from an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1/photos]], Then the web service will respond with a validation error of invalid token [Verify that API response not is 200], And the schema should match with the specification defined in "errors.json" [Verify response schema with errors.json], Consult a photo album list with invalid access token:When I consume the web service to see the photo list of an album on the platform with an invalid access Token [See the photos from an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1/photos]], Then the web service will respond with a validation error of invalid token [Verify that API response not is 200], And the schema should match with the specification defined in "errors.json" [Verify response schema with errors.json], Consult a photo album list with invalid album id:Given I have an access Token of a regular user to see a photo album list [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to see the photo list of an album on the platform with an invalid album list [See the photos from an album for invalid albumId into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/a/photos]], Then the web service will respond with a validation error of invalid album id [Verify that API response not is 200], And the schema should match with the specification defined in "errors.json"]
-22:54:13.316 [Test worker] ERROR n.t.c.steps.ConsoleLoggingListener - 
-           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
-  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
- (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
-  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
- (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
-          \_\                                                            
-
-TEST FAILED: Consult a photo album list with invalid album id
---------------------------------------------------------------------------
-22:54:13.318 [Test worker] ERROR n.t.c.steps.ConsoleLoggingListener - TEST FAILED AT STEP Verify that API response not is 200
-22:54:13.318 [Test worker] ERROR n.t.c.steps.ConsoleLoggingListener - Expecting:  200not to be equal to:  200
-22:54:14.675 [Test worker] WARN  n.t.core.steps.BaseStepListener - testFinished: Consult a photo album list for non existent album id:Given I have an access Token of a regular user to see a photo album list [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to see the photo list for an non existent album on the platform [See the photos from an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1456789123/photos]], Then the web service will respond with a validation error of invalid album id [Verify that API response not is 200], And the schema should match with the specification defined in "errors.json"
-22:54:14.675 [Test worker] WARN  n.t.core.steps.BaseStepListener - TestOutcomes: [Consult a photo album list with regular user access token:Given I have an access Token of a regular user to see a photo album list [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to see the photo list of an album on the platform [See the photos from an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1/photos]], Then the web service responses with the photo album list of the album [Verify that API response is 200], And the schema should match with the specification defined in "photos.json" [Verify response schema with photos.json], Consult a photo album list without access token:When I consume the web service to see the photo list of an album on the platform without access token [See the photos from an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1/photos]], Then the web service will respond with a validation error of invalid token [Verify that API response not is 200], And the schema should match with the specification defined in "errors.json" [Verify response schema with errors.json], Consult a photo album list with invalid access token:When I consume the web service to see the photo list of an album on the platform with an invalid access Token [See the photos from an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1/photos]], Then the web service will respond with a validation error of invalid token [Verify that API response not is 200], And the schema should match with the specification defined in "errors.json" [Verify response schema with errors.json], Consult a photo album list with invalid album id:Given I have an access Token of a regular user to see a photo album list [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to see the photo list of an album on the platform with an invalid album list [See the photos from an album for invalid albumId into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/a/photos]], Then the web service will respond with a validation error of invalid album id [Verify that API response not is 200], And the schema should match with the specification defined in "errors.json", Consult a photo album list for non existent album id:Given I have an access Token of a regular user to see a photo album list [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to see the photo list for an non existent album on the platform [See the photos from an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1456789123/photos]], Then the web service will respond with a validation error of invalid album id [Verify that API response not is 200], And the schema should match with the specification defined in "errors.json"]
-22:54:14.676 [Test worker] WARN  n.t.core.steps.BaseStepListener - Final testOutcomes: [Consult a photo album list with regular user access token:Given I have an access Token of a regular user to see a photo album list [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to see the photo list of an album on the platform [See the photos from an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1/photos]], Then the web service responses with the photo album list of the album [Verify that API response is 200], And the schema should match with the specification defined in "photos.json" [Verify response schema with photos.json], Consult a photo album list without access token:When I consume the web service to see the photo list of an album on the platform without access token [See the photos from an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1/photos]], Then the web service will respond with a validation error of invalid token [Verify that API response not is 200], And the schema should match with the specification defined in "errors.json" [Verify response schema with errors.json], Consult a photo album list with invalid access token:When I consume the web service to see the photo list of an album on the platform with an invalid access Token [See the photos from an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1/photos]], Then the web service will respond with a validation error of invalid token [Verify that API response not is 200], And the schema should match with the specification defined in "errors.json" [Verify response schema with errors.json], Consult a photo album list with invalid album id:Given I have an access Token of a regular user to see a photo album list [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to see the photo list of an album on the platform with an invalid album list [See the photos from an album for invalid albumId into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/a/photos]], Then the web service will respond with a validation error of invalid album id [Verify that API response not is 200], And the schema should match with the specification defined in "errors.json", Consult a photo album list for non existent album id:Given I have an access Token of a regular user to see a photo album list [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to see the photo list for an non existent album on the platform [See the photos from an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1456789123/photos]], Then the web service will respond with a validation error of invalid album id [Verify that API response not is 200], And the schema should match with the specification defined in "errors.json"]
-22:54:14.676 [Test worker] ERROR n.t.c.steps.ConsoleLoggingListener - 
-           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
-  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
- (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
-  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
- (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
-          \_\                                                            
-
-TEST FAILED: Consult a photo album list for non existent album id
---------------------------------------------------------------------------
-22:54:14.677 [Test worker] ERROR n.t.c.steps.ConsoleLoggingListener - TEST FAILED AT STEP Verify that API response not is 200
-22:54:14.677 [Test worker] ERROR n.t.c.steps.ConsoleLoggingListener - Expecting:  200not to be equal to:  200
-22:54:17.370 [Test worker] WARN  n.t.core.steps.BaseStepListener - testFinished: Consult a photo album list without album id:Given I have an access Token of a regular user to see a photo album list [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to see the photo list of an album on the platform without album id [See the photos from an album without albumId into the platform [GET https://nodejs-qa-training.herokuapp.com/albums%2F%2Fphotos]], Then the web service will respond with a validation error of invalid album id [Verify that API response not is 200], And the schema should match with the specification defined in "errors.json" [Verify response schema with errors.json]
-22:54:17.372 [Test worker] WARN  n.t.core.steps.BaseStepListener - TestOutcomes: [Consult a photo album list with regular user access token:Given I have an access Token of a regular user to see a photo album list [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to see the photo list of an album on the platform [See the photos from an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1/photos]], Then the web service responses with the photo album list of the album [Verify that API response is 200], And the schema should match with the specification defined in "photos.json" [Verify response schema with photos.json], Consult a photo album list without access token:When I consume the web service to see the photo list of an album on the platform without access token [See the photos from an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1/photos]], Then the web service will respond with a validation error of invalid token [Verify that API response not is 200], And the schema should match with the specification defined in "errors.json" [Verify response schema with errors.json], Consult a photo album list with invalid access token:When I consume the web service to see the photo list of an album on the platform with an invalid access Token [See the photos from an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1/photos]], Then the web service will respond with a validation error of invalid token [Verify that API response not is 200], And the schema should match with the specification defined in "errors.json" [Verify response schema with errors.json], Consult a photo album list with invalid album id:Given I have an access Token of a regular user to see a photo album list [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to see the photo list of an album on the platform with an invalid album list [See the photos from an album for invalid albumId into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/a/photos]], Then the web service will respond with a validation error of invalid album id [Verify that API response not is 200], And the schema should match with the specification defined in "errors.json", Consult a photo album list for non existent album id:Given I have an access Token of a regular user to see a photo album list [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to see the photo list for an non existent album on the platform [See the photos from an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1456789123/photos]], Then the web service will respond with a validation error of invalid album id [Verify that API response not is 200], And the schema should match with the specification defined in "errors.json", Consult a photo album list without album id:Given I have an access Token of a regular user to see a photo album list [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to see the photo list of an album on the platform without album id [See the photos from an album without albumId into the platform [GET https://nodejs-qa-training.herokuapp.com/albums%2F%2Fphotos]], Then the web service will respond with a validation error of invalid album id [Verify that API response not is 200], And the schema should match with the specification defined in "errors.json" [Verify response schema with errors.json]]
-22:54:17.374 [Test worker] WARN  n.t.core.steps.BaseStepListener - Final testOutcomes: [Consult a photo album list with regular user access token:Given I have an access Token of a regular user to see a photo album list [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to see the photo list of an album on the platform [See the photos from an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1/photos]], Then the web service responses with the photo album list of the album [Verify that API response is 200], And the schema should match with the specification defined in "photos.json" [Verify response schema with photos.json], Consult a photo album list without access token:When I consume the web service to see the photo list of an album on the platform without access token [See the photos from an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1/photos]], Then the web service will respond with a validation error of invalid token [Verify that API response not is 200], And the schema should match with the specification defined in "errors.json" [Verify response schema with errors.json], Consult a photo album list with invalid access token:When I consume the web service to see the photo list of an album on the platform with an invalid access Token [See the photos from an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1/photos]], Then the web service will respond with a validation error of invalid token [Verify that API response not is 200], And the schema should match with the specification defined in "errors.json" [Verify response schema with errors.json], Consult a photo album list with invalid album id:Given I have an access Token of a regular user to see a photo album list [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to see the photo list of an album on the platform with an invalid album list [See the photos from an album for invalid albumId into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/a/photos]], Then the web service will respond with a validation error of invalid album id [Verify that API response not is 200], And the schema should match with the specification defined in "errors.json", Consult a photo album list for non existent album id:Given I have an access Token of a regular user to see a photo album list [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to see the photo list for an non existent album on the platform [See the photos from an album into the platform [GET https://nodejs-qa-training.herokuapp.com/albums/1456789123/photos]], Then the web service will respond with a validation error of invalid album id [Verify that API response not is 200], And the schema should match with the specification defined in "errors.json", Consult a photo album list without album id:Given I have an access Token of a regular user to see a photo album list [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to see the photo list of an album on the platform without album id [See the photos from an album without albumId into the platform [GET https://nodejs-qa-training.herokuapp.com/albums%2F%2Fphotos]], Then the web service will respond with a validation error of invalid album id [Verify that API response not is 200], And the schema should match with the specification defined in "errors.json" [Verify response schema with errors.json]]
-22:54:17.374 [Test worker] ERROR n.t.c.steps.ConsoleLoggingListener - 
-           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
-  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
- (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
-  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
- (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
-          \_\                                                            
-
-TEST FAILED WITH ERROR: Consult a photo album list without album id
----------------------------------------------------------------------
-22:54:17.375 [Test worker] ERROR n.t.c.steps.ConsoleLoggingListener - TEST FAILED AT STEP Verify response schema with errors.json
-22:54:17.375 [Test worker] ERROR n.t.c.steps.ConsoleLoggingListener - 
-Feature: Photo album list
-
-  Scenario: Consult a photo album list with regular user access token                ?[90m# src/test/resources/features/photo_album_list.feature:3?[0m
-    ?[32mGiven ?[0m?[32mI have an access Token of a regular user to see a photo album list?[0m         ?[90m# PhotosStepDef.iHaveAnAccessTokenOfARegularUserToSeeAPhotoAlbumList()?[0m
-    ?[32mWhen ?[0m?[32mI consume the web service to see the photo list of an album on the platform?[0m ?[90m# PhotosStepDef.iConsumeTheWebServiceToSeeThePhotoListOfAnAlbumOnThePlatform()?[0m
-    ?[32mThen ?[0m?[32mthe web service responses with the photo album list of the album?[0m            ?[90m# PhotosStepDef.theWebServiceResponsesWithThePhotoAlbumListOfTheAlbum()?[0m
-    ?[31mAnd ?[0m?[31mthe schema should match with the specification defined in "?[0m?[31m?[1mphotos.json?[0m?[31m"?[0m      ?[90m# CommonSteps.the_schema_should_match_with_the_specification(String)?[0m
-      ?[31mjava.lang.IllegalArgumentException: Schema to use cannot be null
-	at io.restassured.module.jsv.JsonSchemaValidator.validateSchemaIsNotNull(JsonSchemaValidator.java:270)
-	at io.restassured.module.jsv.JsonSchemaValidator.access$300(JsonSchemaValidator.java:75)
-	at io.restassured.module.jsv.JsonSchemaValidator$JsonSchemaValidatorFactory.create(JsonSchemaValidator.java:281)
-	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema(JsonSchemaValidator.java:166)
-	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath(JsonSchemaValidator.java:117)
-	at com.naiofy.albums_shop.questions.CommonQuestions.verifyResponseSchema(CommonQuestions.java:23)
-	at com.naiofy.albums_shop.questions.CommonQuestions$ByteBuddy$93cyGqaT.verifyResponseSchema$accessor$s6Fyj8NH(Unknown Source)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:471)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:451)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
-	at com.naiofy.albums_shop.questions.CommonQuestions$ByteBuddy$93cyGqaT.verifyResponseSchema(Unknown Source)
-	at com.naiofy.albums_shop.stepdefinitions.CommonSteps.the_schema_should_match_with_the_specification(CommonSteps.java:17)
-	at ?.the schema should match with the specification defined in "photos.json"(src/test/resources/features/photo_album_list.feature:7)
-?[0m
-
-  Scenario: Consult a photo album list without access token                                               ?[90m# src/test/resources/features/photo_album_list.feature:9?[0m
-    ?[32mWhen ?[0m?[32mI consume the web service to see the photo list of an album on the platform without access token?[0m ?[90m# PhotosStepDef.iConsumeTheWebServiceToSeeThePhotoListOfAnAlbumOnThePlatformWithoutAccessToken()?[0m
-    ?[32mThen ?[0m?[32mthe web service will respond with a validation error of invalid token?[0m                            ?[90m# CommonSteps.theWebServiceWillRespondWithAValidationErrorOfInvalidToken()?[0m
-    ?[32mAnd ?[0m?[32mthe schema should match with the specification defined in "?[0m?[32m?[1merrors.json?[0m?[32m"?[0m                           ?[90m# CommonSteps.the_schema_should_match_with_the_specification(String)?[0m
-
-  Scenario: Consult a photo album list with invalid access token                                                  ?[90m# src/test/resources/features/photo_album_list.feature:14?[0m
-    ?[32mWhen ?[0m?[32mI consume the web service to see the photo list of an album on the platform with an invalid access Token?[0m ?[90m# PhotosStepDef.iConsumeTheWebServiceToSeeThePhotoListOfAnAlbumOnThePlatformWithAnInvalidAccessToken()?[0m
-    ?[32mThen ?[0m?[32mthe web service will respond with a validation error of invalid token?[0m                                    ?[90m# CommonSteps.theWebServiceWillRespondWithAValidationErrorOfInvalidToken()?[0m
-    ?[32mAnd ?[0m?[32mthe schema should match with the specification defined in "?[0m?[32m?[1merrors.json?[0m?[32m"?[0m                                   ?[90m# CommonSteps.the_schema_should_match_with_the_specification(String)?[0m
-
-  Scenario: Consult a photo album list with invalid album id                                                    ?[90m# src/test/resources/features/photo_album_list.feature:19?[0m
-    ?[32mGiven ?[0m?[32mI have an access Token of a regular user to see a photo album list?[0m                                    ?[90m# PhotosStepDef.iHaveAnAccessTokenOfARegularUserToSeeAPhotoAlbumList()?[0m
-    ?[32mWhen ?[0m?[32mI consume the web service to see the photo list of an album on the platform with an invalid album list?[0m ?[90m# PhotosStepDef.iConsumeTheWebServiceToSeeThePhotoListOfAnAlbumOnThePlatformWithAnInvalidAlbumList()?[0m
-    ?[31mThen ?[0m?[31mthe web service will respond with a validation error of invalid album id?[0m                               ?[90m# PhotosStepDef.theWebServiceWillRespondWithAValidationErrorOfInvalidAlbumId()?[0m
-      ?[31mjava.lang.AssertionError: 
-Expecting:
-  200
-not to be equal to:
-  200
-
-	at com.naiofy.albums_shop.questions.CommonQuestions.responseCodeNotIs(CommonQuestions.java:18)
-	at com.naiofy.albums_shop.questions.CommonQuestions$ByteBuddy$HeGtV57P.responseCodeNotIs$accessor$ubbscbIF(Unknown Source)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:471)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:451)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
-	at com.naiofy.albums_shop.questions.CommonQuestions$ByteBuddy$HeGtV57P.responseCodeNotIs(Unknown Source)
-	at com.naiofy.albums_shop.stepdefinitions.PhotosStepDef.theWebServiceWillRespondWithAValidationErrorOfInvalidAlbumId(PhotosStepDef.java:68)
-	at ?.the web service will respond with a validation error of invalid album id(src/test/resources/features/photo_album_list.feature:22)
-?[0m
-    ?[36mAnd ?[0m?[36mthe schema should match with the specification defined in "?[0m?[36m?[1merrors.json?[0m?[36m"?[0m                                 ?[90m# CommonSteps.the_schema_should_match_with_the_specification(String)?[0m
-
-  Scenario: Consult a photo album list for non existent album id                                   ?[90m# src/test/resources/features/photo_album_list.feature:25?[0m
-    ?[32mGiven ?[0m?[32mI have an access Token of a regular user to see a photo album list?[0m                       ?[90m# PhotosStepDef.iHaveAnAccessTokenOfARegularUserToSeeAPhotoAlbumList()?[0m
-    ?[32mWhen ?[0m?[32mI consume the web service to see the photo list for an non existent album on the platform?[0m ?[90m# PhotosStepDef.iConsumeTheWebServiceToSeeThePhotoListForAnNonExistentAlbumOnThePlatform()?[0m
-    ?[31mThen ?[0m?[31mthe web service will respond with a validation error of invalid album id?[0m                  ?[90m# PhotosStepDef.theWebServiceWillRespondWithAValidationErrorOfInvalidAlbumId()?[0m
-      ?[31mjava.lang.AssertionError: 
-Expecting:
-  200
-not to be equal to:
-  200
-
-	at com.naiofy.albums_shop.questions.CommonQuestions.responseCodeNotIs(CommonQuestions.java:18)
-	at com.naiofy.albums_shop.questions.CommonQuestions$ByteBuddy$Z3SDXCl1.responseCodeNotIs$accessor$B8OIaf4U(Unknown Source)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:471)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:451)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
-	at com.naiofy.albums_shop.questions.CommonQuestions$ByteBuddy$Z3SDXCl1.responseCodeNotIs(Unknown Source)
-	at com.naiofy.albums_shop.stepdefinitions.PhotosStepDef.theWebServiceWillRespondWithAValidationErrorOfInvalidAlbumId(PhotosStepDef.java:68)
-	at ?.the web service will respond with a validation error of invalid album id(src/test/resources/features/photo_album_list.feature:28)
-?[0m
-    ?[36mAnd ?[0m?[36mthe schema should match with the specification defined in "?[0m?[36m?[1merrors.json?[0m?[36m"?[0m                    ?[90m# CommonSteps.the_schema_should_match_with_the_specification(String)?[0m
-
-  Scenario: Consult a photo album list without album id                                               ?[90m# src/test/resources/features/photo_album_list.feature:31?[0m
-    ?[32mGiven ?[0m?[32mI have an access Token of a regular user to see a photo album list?[0m                          ?[90m# PhotosStepDef.iHaveAnAccessTokenOfARegularUserToSeeAPhotoAlbumList()?[0m
-    ?[32mWhen ?[0m?[32mI consume the web service to see the photo list of an album on the platform without album id?[0m ?[90m# PhotosStepDef.iConsumeTheWebServiceToSeeThePhotoListOfAnAlbumOnThePlatformWithoutAlbumId()?[0m
-    ?[32mThen ?[0m?[32mthe web service will respond with a validation error of invalid album id?[0m                     ?[90m# PhotosStepDef.theWebServiceWillRespondWithAValidationErrorOfInvalidAlbumId()?[0m
-    ?[31mAnd ?[0m?[31mthe schema should match with the specification defined in "?[0m?[31m?[1merrors.json?[0m?[31m"?[0m                       ?[90m# CommonSteps.the_schema_should_match_with_the_specification(String)?[0m
-      ?[31mio.restassured.module.jsv.JsonSchemaValidationException: com.fasterxml.jackson.core.JsonParseException: Unexpected character ('<' (code 60)): expected a valid value (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
- at [Source: (StringReader); line: 1, column: 2]
-	at io.restassured.module.jsv.JsonSchemaValidator.matchesSafely(JsonSchemaValidator.java:233)
-	at io.restassured.module.jsv.JsonSchemaValidator.matchesSafely(JsonSchemaValidator.java:75)
-	at org.hamcrest.TypeSafeMatcher.matches(TypeSafeMatcher.java:65)
-	at org.hamcrest.Matcher$matches.call(Unknown Source)
-	at io.restassured.assertion.BodyMatcher.validate(BodyMatcher.groovy:76)
-	at io.restassured.assertion.BodyMatcher$validate$0.call(Unknown Source)
-	at io.restassured.assertion.BodyMatcherGroup$_validate_closure2.doCall(BodyMatcherGroup.groovy:47)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:104)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:326)
-	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:264)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1041)
-	at groovy.lang.Closure.call(Closure.java:411)
-	at groovy.lang.Closure.call(Closure.java:427)
-	at org.codehaus.groovy.runtime.DefaultGroovyMethods.collect(DefaultGroovyMethods.java:3540)
-	at org.codehaus.groovy.runtime.DefaultGroovyMethods.collect(DefaultGroovyMethods.java:3525)
-	at org.codehaus.groovy.runtime.DefaultGroovyMethods.collect(DefaultGroovyMethods.java:3625)
-	at org.codehaus.groovy.runtime.dgm$87.invoke(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoMetaMethodSiteNoUnwrapNoCoerce.invoke(PojoMetaMethodSite.java:246)
-	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:55)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:127)
-	at io.restassured.assertion.BodyMatcherGroup.validate(BodyMatcherGroup.groovy:47)
-	at io.restassured.assertion.BodyMatcherGroup$validate$3.call(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:481)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:656)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:190)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:58)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:168)
-	at io.restassured.internal.ResponseSpecificationImpl.content(ResponseSpecificationImpl.groovy:97)
-	at io.restassured.specification.ResponseSpecification$content$0.callCurrent(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:256)
-	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:268)
-	at com.naiofy.albums_shop.questions.CommonQuestions.verifyResponseSchema(CommonQuestions.java:23)
-	at com.naiofy.albums_shop.questions.CommonQuestions$ByteBuddy$RrJRhwZQ.verifyResponseSchema$accessor$8JYL03d6(Unknown Source)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:471)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:451)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
-	at com.naiofy.albums_shop.questions.CommonQuestions$ByteBuddy$RrJRhwZQ.verifyResponseSchema(Unknown Source)
-	at com.naiofy.albums_shop.stepdefinitions.CommonSteps.the_schema_should_match_with_the_specification(CommonSteps.java:17)
-	at ?.the schema should match with the specification defined in "errors.json"(src/test/resources/features/photo_album_list.feature:35)
-Caused by: com.fasterxml.jackson.core.JsonParseException: Unexpected character ('<' (code 60)): expected a valid value (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
- at [Source: (StringReader); line: 1, column: 2]
-	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2337)
-	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:710)
-	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:635)
-	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:1952)
-	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:781)
-	at com.fasterxml.jackson.databind.MappingIterator.hasNextValue(MappingIterator.java:243)
-	at com.github.fge.jackson.JsonNodeReader.readNode(JsonNodeReader.java:149)
-	at com.github.fge.jackson.JsonNodeReader.fromReader(JsonNodeReader.java:129)
-	at com.github.fge.jackson.JsonLoader.fromReader(JsonLoader.java:186)
-	at com.github.fge.jackson.JsonLoader.fromString(JsonLoader.java:199)
-	at io.restassured.module.jsv.JsonSchemaValidator.matchesSafely(JsonSchemaValidator.java:214)
-	at io.restassured.module.jsv.JsonSchemaValidator.matchesSafely(JsonSchemaValidator.java:75)
-	at org.hamcrest.TypeSafeMatcher.matches(TypeSafeMatcher.java:65)
-	at org.hamcrest.Matcher$matches.call(Unknown Source)
-	at io.restassured.assertion.BodyMatcher.validate(BodyMatcher.groovy:76)
-	at io.restassured.assertion.BodyMatcher$validate$0.call(Unknown Source)
-	at io.restassured.assertion.BodyMatcherGroup$_validate_closure2.doCall(BodyMatcherGroup.groovy:47)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:104)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:326)
-	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:264)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1041)
-	at groovy.lang.Closure.call(Closure.java:411)
-	at groovy.lang.Closure.call(Closure.java:427)
-	at org.codehaus.groovy.runtime.DefaultGroovyMethods.collect(DefaultGroovyMethods.java:3540)
-	at org.codehaus.groovy.runtime.DefaultGroovyMethods.collect(DefaultGroovyMethods.java:3525)
-	at org.codehaus.groovy.runtime.DefaultGroovyMethods.collect(DefaultGroovyMethods.java:3625)
-	at org.codehaus.groovy.runtime.dgm$87.invoke(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoMetaMethodSiteNoUnwrapNoCoerce.invoke(PojoMetaMethodSite.java:246)
-	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:55)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:127)
-	at io.restassured.assertion.BodyMatcherGroup.validate(BodyMatcherGroup.groovy:47)
-	at io.restassured.assertion.BodyMatcherGroup$validate$3.call(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:481)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:656)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:190)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:58)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:168)
-	at io.restassured.internal.ResponseSpecificationImpl.content(ResponseSpecificationImpl.groovy:97)
-	at io.restassured.specification.ResponseSpecification$content$0.callCurrent(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:256)
-	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:268)
-	at com.naiofy.albums_shop.questions.CommonQuestions.verifyResponseSchema(CommonQuestions.java:23)
-	at com.naiofy.albums_shop.questions.CommonQuestions$ByteBuddy$RrJRhwZQ.verifyResponseSchema$accessor$8JYL03d6(Unknown Source)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:471)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:451)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
-	at com.naiofy.albums_shop.questions.CommonQuestions$ByteBuddy$RrJRhwZQ.verifyResponseSchema(Unknown Source)
-	at com.naiofy.albums_shop.stepdefinitions.CommonSteps.the_schema_should_match_with_the_specification(CommonSteps.java:17)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at cucumber.runtime.Utils$1.call(Utils.java:26)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:20)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:49)
-	at cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)
-	at cucumber.runner.TestStep.executeStep(TestStep.java:63)
-	at cucumber.runner.TestStep.run(TestStep.java:49)
-	at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)
-	at cucumber.runner.TestCase.run(TestCase.java:44)
-	at cucumber.runner.Runner.runPickle(Runner.java:40)
-	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
-	at net.serenitybdd.cucumber.CucumberWithSerenity.runChild(CucumberWithSerenity.java:193)
-	at net.serenitybdd.cucumber.CucumberWithSerenity.runChild(CucumberWithSerenity.java:64)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at net.serenitybdd.cucumber.CucumberWithSerenity$1.evaluate(CucumberWithSerenity.java:202)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
-	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
-	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:175)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:157)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
-	at java.lang.Thread.run(Thread.java:748)
-?[0m
-
-?[31mFailed scenarios:?[0m
-?[31msrc/test/resources/features/photo_album_list.feature:3 ?[0m# Consult a photo album list with regular user access token
-?[31msrc/test/resources/features/photo_album_list.feature:19 ?[0m# Consult a photo album list with invalid album id
-?[31msrc/test/resources/features/photo_album_list.feature:25 ?[0m# Consult a photo album list for non existent album id
-?[31msrc/test/resources/features/photo_album_list.feature:31 ?[0m# Consult a photo album list without album id
-
-6 Scenarios (?[31m4 failed?[0m, ?[32m2 passed?[0m)
-22 Steps (?[31m4 failed?[0m, ?[36m2 skipped?[0m, ?[32m16 passed?[0m)
-0m9,712s
-
-java.lang.IllegalArgumentException: Schema to use cannot be null
-	at io.restassured.module.jsv.JsonSchemaValidator.validateSchemaIsNotNull(JsonSchemaValidator.java:270)
-	at io.restassured.module.jsv.JsonSchemaValidator.access$300(JsonSchemaValidator.java:75)
-	at io.restassured.module.jsv.JsonSchemaValidator$JsonSchemaValidatorFactory.create(JsonSchemaValidator.java:281)
-	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema(JsonSchemaValidator.java:166)
-	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath(JsonSchemaValidator.java:117)
-	at com.naiofy.albums_shop.questions.CommonQuestions.verifyResponseSchema(CommonQuestions.java:23)
-	at com.naiofy.albums_shop.questions.CommonQuestions$ByteBuddy$93cyGqaT.verifyResponseSchema$accessor$s6Fyj8NH(Unknown Source)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:471)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:451)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
-	at com.naiofy.albums_shop.questions.CommonQuestions$ByteBuddy$93cyGqaT.verifyResponseSchema(Unknown Source)
-	at com.naiofy.albums_shop.stepdefinitions.CommonSteps.the_schema_should_match_with_the_specification(CommonSteps.java:17)
-	at ?.the schema should match with the specification defined in "photos.json"(src/test/resources/features/photo_album_list.feature:7)
-
-java.lang.AssertionError: 
-Expecting:
-  200
-not to be equal to:
-  200
-
-	at com.naiofy.albums_shop.questions.CommonQuestions.responseCodeNotIs(CommonQuestions.java:18)
-	at com.naiofy.albums_shop.questions.CommonQuestions$ByteBuddy$HeGtV57P.responseCodeNotIs$accessor$ubbscbIF(Unknown Source)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:471)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:451)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
-	at com.naiofy.albums_shop.questions.CommonQuestions$ByteBuddy$HeGtV57P.responseCodeNotIs(Unknown Source)
-	at com.naiofy.albums_shop.stepdefinitions.PhotosStepDef.theWebServiceWillRespondWithAValidationErrorOfInvalidAlbumId(PhotosStepDef.java:68)
-	at ?.the web service will respond with a validation error of invalid album id(src/test/resources/features/photo_album_list.feature:22)
-
-java.lang.AssertionError: 
-Expecting:
-  200
-not to be equal to:
-  200
-
-	at com.naiofy.albums_shop.questions.CommonQuestions.responseCodeNotIs(CommonQuestions.java:18)
-	at com.naiofy.albums_shop.questions.CommonQuestions$ByteBuddy$Z3SDXCl1.responseCodeNotIs$accessor$B8OIaf4U(Unknown Source)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:471)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:451)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
-	at com.naiofy.albums_shop.questions.CommonQuestions$ByteBuddy$Z3SDXCl1.responseCodeNotIs(Unknown Source)
-	at com.naiofy.albums_shop.stepdefinitions.PhotosStepDef.theWebServiceWillRespondWithAValidationErrorOfInvalidAlbumId(PhotosStepDef.java:68)
-	at ?.the web service will respond with a validation error of invalid album id(src/test/resources/features/photo_album_list.feature:28)
-
-io.restassured.module.jsv.JsonSchemaValidationException: com.fasterxml.jackson.core.JsonParseException: Unexpected character ('<' (code 60)): expected a valid value (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
- at [Source: (StringReader); line: 1, column: 2]
-	at io.restassured.module.jsv.JsonSchemaValidator.matchesSafely(JsonSchemaValidator.java:233)
-	at io.restassured.module.jsv.JsonSchemaValidator.matchesSafely(JsonSchemaValidator.java:75)
-	at org.hamcrest.TypeSafeMatcher.matches(TypeSafeMatcher.java:65)
-	at org.hamcrest.Matcher$matches.call(Unknown Source)
-	at io.restassured.assertion.BodyMatcher.validate(BodyMatcher.groovy:76)
-	at io.restassured.assertion.BodyMatcher$validate$0.call(Unknown Source)
-	at io.restassured.assertion.BodyMatcherGroup$_validate_closure2.doCall(BodyMatcherGroup.groovy:47)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:104)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:326)
-	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:264)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1041)
-	at groovy.lang.Closure.call(Closure.java:411)
-	at groovy.lang.Closure.call(Closure.java:427)
-	at org.codehaus.groovy.runtime.DefaultGroovyMethods.collect(DefaultGroovyMethods.java:3540)
-	at org.codehaus.groovy.runtime.DefaultGroovyMethods.collect(DefaultGroovyMethods.java:3525)
-	at org.codehaus.groovy.runtime.DefaultGroovyMethods.collect(DefaultGroovyMethods.java:3625)
-	at org.codehaus.groovy.runtime.dgm$87.invoke(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoMetaMethodSiteNoUnwrapNoCoerce.invoke(PojoMetaMethodSite.java:246)
-	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:55)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:127)
-	at io.restassured.assertion.BodyMatcherGroup.validate(BodyMatcherGroup.groovy:47)
-	at io.restassured.assertion.BodyMatcherGroup$validate$3.call(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:481)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:656)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:190)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:58)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:168)
-	at io.restassured.internal.ResponseSpecificationImpl.content(ResponseSpecificationImpl.groovy:97)
-	at io.restassured.specification.ResponseSpecification$content$0.callCurrent(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:256)
-	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:268)
-	at com.naiofy.albums_shop.questions.CommonQuestions.verifyResponseSchema(CommonQuestions.java:23)
-	at com.naiofy.albums_shop.questions.CommonQuestions$ByteBuddy$RrJRhwZQ.verifyResponseSchema$accessor$8JYL03d6(Unknown Source)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:471)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:451)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
-	at com.naiofy.albums_shop.questions.CommonQuestions$ByteBuddy$RrJRhwZQ.verifyResponseSchema(Unknown Source)
-	at com.naiofy.albums_shop.stepdefinitions.CommonSteps.the_schema_should_match_with_the_specification(CommonSteps.java:17)
-	at ?.the schema should match with the specification defined in "errors.json"(src/test/resources/features/photo_album_list.feature:35)
-Caused by: com.fasterxml.jackson.core.JsonParseException: Unexpected character ('<' (code 60)): expected a valid value (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
- at [Source: (StringReader); line: 1, column: 2]
-	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2337)
-	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:710)
-	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:635)
-	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:1952)
-	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:781)
-	at com.fasterxml.jackson.databind.MappingIterator.hasNextValue(MappingIterator.java:243)
-	at com.github.fge.jackson.JsonNodeReader.readNode(JsonNodeReader.java:149)
-	at com.github.fge.jackson.JsonNodeReader.fromReader(JsonNodeReader.java:129)
-	at com.github.fge.jackson.JsonLoader.fromReader(JsonLoader.java:186)
-	at com.github.fge.jackson.JsonLoader.fromString(JsonLoader.java:199)
-	at io.restassured.module.jsv.JsonSchemaValidator.matchesSafely(JsonSchemaValidator.java:214)
-	at io.restassured.module.jsv.JsonSchemaValidator.matchesSafely(JsonSchemaValidator.java:75)
-	at org.hamcrest.TypeSafeMatcher.matches(TypeSafeMatcher.java:65)
-	at org.hamcrest.Matcher$matches.call(Unknown Source)
-	at io.restassured.assertion.BodyMatcher.validate(BodyMatcher.groovy:76)
-	at io.restassured.assertion.BodyMatcher$validate$0.call(Unknown Source)
-	at io.restassured.assertion.BodyMatcherGroup$_validate_closure2.doCall(BodyMatcherGroup.groovy:47)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:104)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:326)
-	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:264)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1041)
-	at groovy.lang.Closure.call(Closure.java:411)
-	at groovy.lang.Closure.call(Closure.java:427)
-	at org.codehaus.groovy.runtime.DefaultGroovyMethods.collect(DefaultGroovyMethods.java:3540)
-	at org.codehaus.groovy.runtime.DefaultGroovyMethods.collect(DefaultGroovyMethods.java:3525)
-	at org.codehaus.groovy.runtime.DefaultGroovyMethods.collect(DefaultGroovyMethods.java:3625)
-	at org.codehaus.groovy.runtime.dgm$87.invoke(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoMetaMethodSiteNoUnwrapNoCoerce.invoke(PojoMetaMethodSite.java:246)
-	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:55)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:127)
-	at io.restassured.assertion.BodyMatcherGroup.validate(BodyMatcherGroup.groovy:47)
-	at io.restassured.assertion.BodyMatcherGroup$validate$3.call(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:481)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:656)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:190)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:58)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:168)
-	at io.restassured.internal.ResponseSpecificationImpl.content(ResponseSpecificationImpl.groovy:97)
-	at io.restassured.specification.ResponseSpecification$content$0.callCurrent(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:256)
-	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:268)
-	at com.naiofy.albums_shop.questions.CommonQuestions.verifyResponseSchema(CommonQuestions.java:23)
-	at com.naiofy.albums_shop.questions.CommonQuestions$ByteBuddy$RrJRhwZQ.verifyResponseSchema$accessor$8JYL03d6(Unknown Source)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:471)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:451)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
-	at com.naiofy.albums_shop.questions.CommonQuestions$ByteBuddy$RrJRhwZQ.verifyResponseSchema(Unknown Source)
-	at com.naiofy.albums_shop.stepdefinitions.CommonSteps.the_schema_should_match_with_the_specification(CommonSteps.java:17)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at cucumber.runtime.Utils$1.call(Utils.java:26)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:20)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:49)
-	at cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)
-	at cucumber.runner.TestStep.executeStep(TestStep.java:63)
-	at cucumber.runner.TestStep.run(TestStep.java:49)
-	at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)
-	at cucumber.runner.TestCase.run(TestCase.java:44)
-	at cucumber.runner.Runner.runPickle(Runner.java:40)
-	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
-	at net.serenitybdd.cucumber.CucumberWithSerenity.runChild(CucumberWithSerenity.java:193)
-	at net.serenitybdd.cucumber.CucumberWithSerenity.runChild(CucumberWithSerenity.java:64)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at net.serenitybdd.cucumber.CucumberWithSerenity$1.evaluate(CucumberWithSerenity.java:202)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
-	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
-	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:175)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:157)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
-	at java.lang.Thread.run(Thread.java:748)
-
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

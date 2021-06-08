@@ -1,92 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Album list" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-06-08T03:53:31" hostname="PSOFKA0172" time="33.34">
-  <properties/>
-  <testcase name="Consult a album list with regular user access token" classname="Album list" time="31.656"/>
-  <testcase name="Consult a album list without access token" classname="Album list" time="0.785"/>
-  <testcase name="Consult a album list with invalid access token" classname="Album list" time="0.882"/>
-  <system-out><![CDATA[22:53:31.855 [Test worker] WARN  n.t.core.steps.BaseStepListener - testStarted: Consult a album list with regular user access token/album-list;consult-a-album-list-with-regular-user-access-token
-22:53:31.867 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - 
- _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
-|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
-  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
-  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
-  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
-                                                                  
-
-TEST STARTED: Consult a album list with regular user access token
--------------------------------------------------------------------(album-list;consult-a-album-list-with-regular-user-access-token)
-22:53:33.522 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@5954c8c4
-22:53:35.787 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@3ea9deb5
-22:53:36.389 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@7d5174b7
-22:53:58.495 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@642dace2
-22:53:58.499 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a album list with regular user access token:Given I have an access Token of a regular user to search albums [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]]
-22:53:58.536 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a album list with regular user access token:Given I have an access Token of a regular user to search albums [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]]
-22:54:00.354 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a album list with regular user access token:Given I have an access Token of a regular user to search albums [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]]
-22:54:00.364 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a album list with regular user access token:Given I have an access Token of a regular user to search albums [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]]
-22:54:00.366 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@68d35f25
-22:54:00.368 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@358596dd
-22:54:01.149 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@906f58a
-22:54:01.149 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a album list with regular user access token:Given I have an access Token of a regular user to search albums [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to see the album list on the platform [See the albums into the platform [GET https://nodejs-qa-training.herokuapp.com/albums]]
-22:54:01.149 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a album list with regular user access token:Given I have an access Token of a regular user to search albums [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to see the album list on the platform [See the albums into the platform [GET https://nodejs-qa-training.herokuapp.com/albums]]
-22:54:01.153 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a album list with regular user access token:Given I have an access Token of a regular user to search albums [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to see the album list on the platform [See the albums into the platform [GET https://nodejs-qa-training.herokuapp.com/albums]]
-22:54:01.153 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@5daa22ed
-22:54:01.158 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@2a710bd9
-22:54:01.293 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a album list with regular user access token:Given I have an access Token of a regular user to search albums [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to see the album list on the platform [See the albums into the platform [GET https://nodejs-qa-training.herokuapp.com/albums]], Then the web service responses with the list of albums [Verify that API response is 200]
-22:54:01.298 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a album list with regular user access token:Given I have an access Token of a regular user to search albums [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to see the album list on the platform [See the albums into the platform [GET https://nodejs-qa-training.herokuapp.com/albums]], Then the web service responses with the list of albums [Verify that API response is 200]
-22:54:01.301 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@1d3dd643
-22:54:01.313 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@4917e105
-22:54:03.478 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a album list with regular user access token:Given I have an access Token of a regular user to search albums [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to see the album list on the platform [See the albums into the platform [GET https://nodejs-qa-training.herokuapp.com/albums]], Then the web service responses with the list of albums [Verify that API response is 200], And the schema should match with the specification defined in "album_list.json" [Verify response schema with album_list.json]
-22:54:03.478 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a album list with regular user access token:Given I have an access Token of a regular user to search albums [Login an user into the platform [Login user [POST https://nodejs-qa-training.herokuapp.com/users/sessions]]], When I consume the web service to see the album list on the platform [See the albums into the platform [GET https://nodejs-qa-training.herokuapp.com/albums]], Then the web service responses with the list of albums [Verify that API response is 200], And the schema should match with the specification defined in "album_list.json" [Verify response schema with album_list.json]
-22:54:03.495 [Test worker] WARN  n.t.core.steps.BaseStepListener - testStarted: Consult a album list without access token/album-list;consult-a-album-list-without-access-token
-22:54:03.498 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - 
- _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
-|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
-  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
-  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
-  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
-                                                                  
-
-TEST STARTED: Consult a album list without access token
--------------------------------------------------------------------(album-list;consult-a-album-list-without-access-token)
-22:54:03.503 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@47b4e5c4
-22:54:03.618 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@2bc04a8d
-22:54:04.208 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@1c4c8899
-22:54:04.210 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a album list without access token:When I consume the web service to see the album list on the platform without access token [See the albums into the platform [GET https://nodejs-qa-training.herokuapp.com/albums]]
-22:54:04.211 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a album list without access token:When I consume the web service to see the album list on the platform without access token [See the albums into the platform [GET https://nodejs-qa-training.herokuapp.com/albums]]
-22:54:04.212 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a album list without access token:When I consume the web service to see the album list on the platform without access token [See the albums into the platform [GET https://nodejs-qa-training.herokuapp.com/albums]]
-22:54:04.213 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@351c5028
-22:54:04.225 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@79e18273
-22:54:04.227 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a album list without access token:When I consume the web service to see the album list on the platform without access token [See the albums into the platform [GET https://nodejs-qa-training.herokuapp.com/albums]], Then the web service will respond with a validation error of invalid token [Verify that API response not is 200]
-22:54:04.229 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a album list without access token:When I consume the web service to see the album list on the platform without access token [See the albums into the platform [GET https://nodejs-qa-training.herokuapp.com/albums]], Then the web service will respond with a validation error of invalid token [Verify that API response not is 200]
-22:54:04.231 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@63388167
-22:54:04.232 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@542ff62c
-22:54:04.275 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a album list without access token:When I consume the web service to see the album list on the platform without access token [See the albums into the platform [GET https://nodejs-qa-training.herokuapp.com/albums]], Then the web service will respond with a validation error of invalid token [Verify that API response not is 200], And the schema should match with the specification defined in "errors.json" [Verify response schema with errors.json]
-22:54:04.277 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a album list without access token:When I consume the web service to see the album list on the platform without access token [See the albums into the platform [GET https://nodejs-qa-training.herokuapp.com/albums]], Then the web service will respond with a validation error of invalid token [Verify that API response not is 200], And the schema should match with the specification defined in "errors.json" [Verify response schema with errors.json]
-22:54:04.295 [Test worker] WARN  n.t.core.steps.BaseStepListener - testStarted: Consult a album list with invalid access token/album-list;consult-a-album-list-with-invalid-access-token
-22:54:04.299 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - 
- _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
-|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
-  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
-  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
-  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
-                                                                  
-
-TEST STARTED: Consult a album list with invalid access token
--------------------------------------------------------------------(album-list;consult-a-album-list-with-invalid-access-token)
-22:54:04.305 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@5382a761
-22:54:04.421 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@508b42d1
-22:54:05.109 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@66ab2499
-22:54:05.110 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a album list with invalid access token:When I consume the web service to see the album list on the platform with an invalid access Token [See the albums into the platform [GET https://nodejs-qa-training.herokuapp.com/albums]]
-22:54:05.111 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a album list with invalid access token:When I consume the web service to see the album list on the platform with an invalid access Token [See the albums into the platform [GET https://nodejs-qa-training.herokuapp.com/albums]]
-22:54:05.114 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a album list with invalid access token:When I consume the web service to see the album list on the platform with an invalid access Token [See the albums into the platform [GET https://nodejs-qa-training.herokuapp.com/albums]]
-22:54:05.116 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@45103e1f
-22:54:05.137 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@1896b75b
-22:54:05.144 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a album list with invalid access token:When I consume the web service to see the album list on the platform with an invalid access Token [See the albums into the platform [GET https://nodejs-qa-training.herokuapp.com/albums]], Then the web service will respond with a validation error of invalid token [Verify that API response not is 200]
-22:54:05.147 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a album list with invalid access token:When I consume the web service to see the album list on the platform with an invalid access Token [See the albums into the platform [GET https://nodejs-qa-training.herokuapp.com/albums]], Then the web service will respond with a validation error of invalid token [Verify that API response not is 200]
-22:54:05.150 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@4d490f44
-22:54:05.152 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@ac2ef45
-22:54:05.160 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a album list with invalid access token:When I consume the web service to see the album list on the platform with an invalid access Token [See the albums into the platform [GET https://nodejs-qa-training.herokuapp.com/albums]], Then the web service will respond with a validation error of invalid token [Verify that API response not is 200], And the schema should match with the specification defined in "errors.json" [Verify response schema with errors.json]
-22:54:05.161 [Test worker] WARN  n.t.core.steps.BaseStepListener - stepFinished: current outcome:Consult a album list with invalid access token:When I consume the web service to see the album list on the platform with an invalid access Token [See the albums into the platform [GET https://nodejs-qa-training.herokuapp.com/albums]], Then the web service will respond with a validation error of invalid token [Verify that API response not is 200], And the schema should match with the specification defined in "errors.json" [Verify response schema with errors.json]
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
