@@ -1,4 +1,4 @@
-# 🚀 Prueba técnica WOLOX. 🚀
+# 🚀 Prueba técnica WOLOX 🚀
 
 Proyecto de pruebas para la tienda de álbumes desarrollada por Naiofy en el que se automatizan los servicios web que permiten realizar las siguientes acciones dentro de la tienda:
 * Registro.
@@ -27,19 +27,20 @@ En caso de necesitar ejecutar los escenarios de pruebas de todas las funcionalid
 
 * **Todos los test:** gradlew clean test aggregate
 
+
 ## Construido con 🛠️
 
-* **Serenity BDD**
-* **Rest Assured**
-* **Cucumber4**
-* **JUnit**
-* **AssertJ**
-* **JavaFaker**
-* **Json-Schema-Validator**
-* **Java 1.8**
-* **Gradle 5.4.1**
+* **Serenity BDD.**
+* **Rest Assured.**
+* **Cucumber4.**
+* **JUnit.**
+* **AssertJ.**
+* **JavaFaker.**
+* **Json-Schema-Validator.**
+* **Java 1.8.**
+* **Gradle 5.4.1.**
 
 
 ## Autores ✒️
 
-* **Alejandro Gallego Durango**
+* **Alejandro Gallego Durango.**
