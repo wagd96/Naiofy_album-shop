@@ -1,4 +1,4 @@
-# 🚀 **RERO TÉCNICO** 🚀
+# 🚀 **RETO TÉCNICO** 🚀
 
 Proyecto de pruebas para la tienda de álbumes desarrollada por Naiofy en el que se automatizan los servicios web que permiten realizar las siguientes acciones dentro de la tienda:
 * Registro.
