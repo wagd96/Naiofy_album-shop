@@ -23,7 +23,7 @@ El proyecto cuenta con un runner que permite ejecutar las pruebas específicas p
 * **Invalidar sesiones:** gradlew clean test -Dregresion="@INVALIDATE_SESSIONS" aggregate
 
 
-En caso de necesitar ejecutar los escenarios de pruebas de todos las funcionalidades, se debe ejecutar el comando: 
+En caso de necesitar ejecutar los escenarios de pruebas de todas las funcionalidades, se debe ejecutar el comando: 
 
 * **Todos los test:** gradlew clean test aggregate
 
